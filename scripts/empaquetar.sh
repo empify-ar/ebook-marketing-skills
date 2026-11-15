@@ -19,7 +19,8 @@ TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 # Valida el encabezado de una habilidad: name igual a la carpeta, solo minúsculas, números y guiones,
-# hasta 64 caracteres, sin las palabras reservadas; description entre 1 y 200 caracteres, sin < ni >.
+# hasta 64 caracteres, sin las palabras reservadas; description entre 1 y 200 caracteres, sin < ni >;
+# license (opcional, es parte de la especificación de habilidades) de hasta 200 caracteres.
 validar() {
   local carpeta="$1" nombre
   nombre="$(basename "$carpeta")"
@@ -34,7 +35,7 @@ campos = {}
 for linea in m.group(1).splitlines():
     k, _, v = linea.partition(":")
     campos[k.strip()] = v.strip().strip('"')
-extra = set(campos) - {"name", "description"}
+extra = set(campos) - {"name", "description", "license"}
 if extra:
     sys.exit(f"{ruta}: campos no permitidos en claude.ai: {sorted(extra)}")
 n, d = campos.get("name", ""), campos.get("description", "")
@@ -44,6 +45,8 @@ if not re.fullmatch(r"[a-z0-9-]{1,64}", n) or "claude" in n or "anthropic" in n:
     sys.exit(f"{ruta}: name inválido")
 if not 1 <= len(d) <= 200 or "<" in d or ">" in d:
     sys.exit(f"{ruta}: description inválida ({len(d)} caracteres)")
+if "license" in campos and not 1 <= len(campos["license"]) <= 200:
+    sys.exit(f"{ruta}: license inválida")
 PY
 }
 

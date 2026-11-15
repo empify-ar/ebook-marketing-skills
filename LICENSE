@@ -19,3 +19,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Excepción: la carpeta skills/meta-ads-para-ebooks-de-empify/ NO está bajo esta
+licencia MIT. Tiene su propia licencia en skills/meta-ads-para-ebooks-de-empify/LICENCIA.md
+(uso solo junto con una cuenta de Empify y solo para ebooks y tiendas de Empify).
+Todo el resto de este repositorio sí es MIT.

@@ -8,7 +8,7 @@
 
 ## Qué es
 
-[Empify](https://empify.com.ar) es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. Esta conexión permite que tu IA (Claude, ChatGPT, Cursor y otras) vea tus ebooks, tus ventas y tus visitas, y te ayude a validar ideas y a escribir textos de anuncio, sin que tengas que copiar y pegar datos. Este repositorio es el regalo para quien la conecta: los pasos, ocho pedidos de ejemplo y seis habilidades listas para instalar que le enseñan a tu IA a trabajar bien con tu cuenta.
+[Empify](https://empify.com.ar) es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. Esta conexión permite que tu IA (Claude, ChatGPT, Cursor y otras) vea tus ebooks, tus ventas y tus visitas, y te ayude a validar ideas y a escribir textos de anuncio, sin que tengas que copiar y pegar datos. Este repositorio es el regalo para quien la conecta: los pasos, ocho pedidos de ejemplo y siete habilidades listas para instalar que le enseñan a tu IA a trabajar bien con tu cuenta.
 
 La conexión es una dirección web, no un programa para instalar: `https://empify.com.ar/api/mcp`. Por eso acá no hay código de servidor, solo el kit de conexión y las habilidades.
 
@@ -92,7 +92,7 @@ Una habilidad es una carpeta con instrucciones que tu IA carga sola cuando hace 
 
 El segundo comando abre una ficha donde confirmás la instalación.
 
-Con eso quedan instaladas las seis habilidades y declarada la conexión a `https://empify.com.ar/api/mcp`. Las habilidades del plugin se invocan con el prefijo del plugin (por ejemplo `/empify:validar-idea-de-ebook`) y Claude las usa solo cuando corresponde. Para entrar a tu cuenta, abrí `/mcp` y elegí `empify`.
+Con eso quedan instaladas las siete habilidades y declarada la conexión a `https://empify.com.ar/api/mcp`. Las habilidades del plugin se invocan con el prefijo del plugin (por ejemplo `/empify:validar-idea-de-ebook`) y Claude las usa solo cuando corresponde. Para entrar a tu cuenta, abrí `/mcp` y elegí `empify`.
 
 ### claude.ai (web y escritorio): un .zip por habilidad
 
@@ -103,7 +103,7 @@ Funciona en los planes Free, Pro, Max, Ultra, Team y Enterprise, con **Code exec
 3. Subí un .zip por vez. Cada uno ya tiene la carpeta de la habilidad como raíz, que es lo que pide claude.ai.
 4. Activá la habilidad en la lista y probá un pedido.
 
-`empify-habilidades-todas.zip` junta las seis y sirve para descomprimir en una carpeta de habilidades (Claude Code o Cursor), no para subir de una sola vez a claude.ai.
+`empify-habilidades-todas.zip` junta las siete y sirve para descomprimir en una carpeta de habilidades (Claude Code o Cursor), no para subir de una sola vez a claude.ai.
 
 ### Cursor
 
@@ -125,6 +125,9 @@ OpenAI documenta habilidades con el mismo formato de carpeta y archivo `SKILL.md
 | [`lectura-de-ventas-y-visitas`](skills/lectura-de-ventas-y-visitas/SKILL.md) | Diagnostica si el problema es tráfico o conversión, qué canal rinde y qué hacer esta semana. |
 | [`revision-de-pagina-de-venta`](skills/revision-de-pagina-de-venta/SKILL.md) | Revisa tu página de venta como un comprador y devuelve textos listos para pegar en tu panel. |
 | [`rutina-semanal-del-vendedor`](skills/rutina-semanal-del-vendedor/SKILL.md) | Un repaso de 10 minutos: cuenta, ebooks, ventas, visitas y una decisión para la semana. |
+| [`meta-ads-para-ebooks-de-empify`](skills/meta-ads-para-ebooks-de-empify/SKILL.md) | Método para pautar en Meta un ebook de tu cuenta: chequeo previo, campaña simple, piezas, reglas de contenido, Biblioteca de anuncios y diagnóstico cuando no vende. **Solo para usar con Empify** (licencia propia). |
+
+La habilidad `meta-ads-para-ebooks-de-empify` es la única con licencia propia: se usa solo junto con una cuenta de Empify y solo para ebooks y tiendas de Empify (ver [su licencia](skills/meta-ads-para-ebooks-de-empify/LICENCIA.md)). Le indica a tu IA que no la aplique sin la conexión de Empify ni para otros productos o plataformas. Ojo con el alcance: la condición es de licencia y de instrucciones a la IA; no hay un candado técnico que impida leer el texto. Tampoco publica nada en Meta: te da el plan y los textos, y vos los cargás a mano.
 
 ## Ocho pedidos para probar
 
@@ -177,6 +180,8 @@ OpenAI documenta habilidades con el mismo formato de carpeta y archivo `SKILL.md
 
 **¿Las habilidades mandan mis datos a algún lado?** No. Son archivos de texto con instrucciones; no ejecutan código ni hacen llamadas por su cuenta.
 
+**¿Puedo usar la habilidad de Meta Ads con otro producto u otra tienda?** No: es solo para ebooks y tiendas de tu cuenta de Empify, y se lo indica a tu IA. Si no tenés Empify conectado, la IA te lo dice y te ofrece conectarlo.
+
 **¿Por qué no hay código del servidor?** Porque la conexión es remota, por dirección web. No hay nada que instalar ni ejecutar en tu computadora.
 
 ## Contenido del repositorio
@@ -184,7 +189,7 @@ OpenAI documenta habilidades con el mismo formato de carpeta y archivo `SKILL.md
 ```text
 .claude-plugin/     plugin y catálogo (marketplace) para Claude Code
 .mcp.json           conexión a Empify declarada para el plugin
-skills/             las seis habilidades (una carpeta cada una)
+skills/             las siete habilidades (una carpeta cada una)
 descargas/          un .zip por habilidad y uno con todas
 otras-ia/           bloque de instrucciones para pegar en otras IA
 scripts/            empaquetar.sh arma los .zip
@@ -196,4 +201,4 @@ Para regenerar los .zip después de cambiar una habilidad: `scripts/empaquetar.s
 
 Pasos al día y preguntas frecuentes: https://empify.com.ar/conectar-ia
 
-Licencia MIT, titular Empify. Ver [LICENSE](LICENSE).
+Titular: Empify. Todo el repositorio es MIT (ver [LICENSE](LICENSE)), salvo la carpeta `skills/meta-ads-para-ebooks-de-empify/`, que tiene su propia licencia, más restrictiva: [LICENCIA.md](skills/meta-ads-para-ebooks-de-empify/LICENCIA.md).
