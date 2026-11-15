@@ -6,10 +6,6 @@
 
 <p align="center">Conectá tu cuenta de Empify con Claude, ChatGPT o tu editor, y sumá habilidades para vender mejor tus ebooks.</p>
 
-<!-- AVISO-ETAPAS -->
-> **Aviso:** la conexión se está habilitando por etapas. Si todavía no te aparece la pantalla de permisos, probá más tarde.
-<!-- /AVISO-ETAPAS -->
-
 ## Qué es
 
 [Empify](https://empify.com.ar) es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. Esta conexión permite que tu IA (Claude, ChatGPT, Cursor y otras) vea tus ebooks, tus ventas y tus visitas, y te ayude a validar ideas y a escribir textos de anuncio, sin que tengas que copiar y pegar datos. Este repositorio es el regalo para quien la conecta: los pasos, ocho pedidos de ejemplo y seis habilidades listas para instalar que le enseñan a tu IA a trabajar bien con tu cuenta.
@@ -37,13 +33,15 @@ Ayuda oficial con los pasos al día: https://empify.com.ar/conectar-ia
 
 ## Conectar Claude en 5 pasos
 
-Funciona en claude.ai y en la aplicación de escritorio. Los planes gratis permiten una conexión propia; Pro y superiores permiten varias. Si tu Claude está en español, los menús pueden figurar traducidos.
+Funciona en claude.ai y en la aplicación de escritorio. Los planes gratis permiten una conexión propia; Pro y superiores permiten varias.
 
-1. Entrá a **Customize** (Personalizar) y abrí **Connectors** (Conectores).
-2. Tocá **Add** y elegí **Add custom connector** (Agregar conector personalizado).
-3. Escribí el nombre `Empify`, pegá la dirección `https://empify.com.ar/api/mcp` y tocá **Continue**. Dejá la autenticación como viene (**Detected**) y tocá **Add**.
-4. Tocá **Connect**. Se abre Empify: entrá con tu cuenta, mirá los permisos (por defecto, solo ver) y aceptá. Si querés que además valide ideas y escriba textos de anuncio, tildá esa casilla.
-5. En cada conversación donde quieras usarlo, tocá **+**, abrí **Connectors** y activá Empify. Probá con un pedido de los de abajo.
+1. Entrá a **Personalización** y abrí **Conectores**.
+2. Tocá **Añadir** y elegí **Añadir conector personalizado**.
+3. Escribí el nombre `Empify`, pegá la dirección `https://empify.com.ar/api/mcp` y tocá **Continuar**. Dejá la autenticación como viene (las opciones marcadas **Detectado**) y tocá **Añadir**.
+4. Tocá **Conectar**. Se abre Empify: entrá con tu cuenta, mirá los permisos (por defecto, solo ver) y tocá **Aceptar y volver**. Si querés que además valide ideas y escriba textos de anuncio, tildá esa casilla antes.
+5. Abrí una conversación nueva y probá con un pedido de los de abajo. La primera vez Claude te pide permiso para usar cada herramienta: podés permitirla una vez o siempre.
+
+Probado el 15 de noviembre de 2026 con Claude en español. Si tu Claude está en inglés, los menús son **Customize**, **Connectors**, **Add custom connector**, **Continue**, **Add** y **Connect**.
 
 En Team y Enterprise, la primera vez la agrega quien administra la cuenta. Agregarla desde el celular no está confirmado por Claude: hacelo desde la web o el escritorio, y después la usás también en la app.
 
@@ -88,11 +86,10 @@ Una habilidad es una carpeta con instrucciones que tu IA carga sola cuando hace 
 ### Claude Code: el plugin (dos comandos)
 
 ```text
-/plugin marketplace add <organizacion>/empify-ia
+/plugin marketplace add gaboplayt24-art/empify-ia
 /plugin install empify@empify
 ```
 
-<!-- PUBLICAR: reemplazar <organizacion> por el nombre real de la organización de GitHub en todo el README -->
 
 Con eso quedan instaladas las seis habilidades y declarada la conexión a `https://empify.com.ar/api/mcp`. Las habilidades del plugin se invocan con el prefijo del plugin (por ejemplo `/empify:validar-idea-de-ebook`) y Claude las usa solo cuando corresponde. Para entrar a tu cuenta, abrí `/mcp` y elegí `empify`.
 
@@ -173,7 +170,7 @@ OpenAI documenta habilidades con el mismo formato de carpeta y archivo `SKILL.md
 
 **¿Qué datos de mis compradores ve?** Ninguno.
 
-**No me aparece la pantalla de permisos.** La conexión se está habilitando por etapas. Probá más tarde.
+**No me aparece la pantalla de permisos.** Fijate que la dirección sea exactamente `https://empify.com.ar/api/mcp` y que hayas entrado a tu cuenta de Empify en ese navegador. Si sigue sin aparecer, quitá el conector y agregalo de nuevo.
 
 **No me aparece la opción en ChatGPT.** Depende de tu plan (ver arriba). Claude es el camino más directo.
 
