@@ -39,7 +39,7 @@ Funciona en claude.ai y en la aplicación de escritorio. Los planes gratis permi
 2. Tocá **Añadir** y elegí **Añadir conector personalizado**.
 3. Escribí el nombre `Empify`, pegá la dirección `https://empify.com.ar/api/mcp` y tocá **Continuar**. Dejá la autenticación como viene (las opciones marcadas **Detectado**) y tocá **Añadir**.
 4. Tocá **Conectar**. Se abre Empify: entrá con tu cuenta, mirá los permisos (por defecto, solo ver) y tocá **Aceptar y volver**. Si querés que además valide ideas y escriba textos de anuncio, tildá esa casilla antes.
-5. Abrí una conversación nueva y probá con un pedido de los de abajo. La primera vez Claude te pide permiso para usar cada herramienta: podés permitirla una vez o siempre.
+5. Abrí una conversación nueva y probá con un pedido de los de abajo. La primera vez Claude puede pedirte permiso para usar cada herramienta: podés permitirla una vez o siempre.
 
 Probado el 15 de noviembre de 2026 con Claude en español. Si tu Claude está en inglés, los menús son **Customize**, **Connectors**, **Add custom connector**, **Continue**, **Add** y **Connect**.
 
@@ -90,6 +90,7 @@ Una habilidad es una carpeta con instrucciones que tu IA carga sola cuando hace 
 /plugin install empify@empify
 ```
 
+El segundo comando abre una ficha donde confirmás la instalación.
 
 Con eso quedan instaladas las seis habilidades y declarada la conexión a `https://empify.com.ar/api/mcp`. Las habilidades del plugin se invocan con el prefijo del plugin (por ejemplo `/empify:validar-idea-de-ebook`) y Claude las usa solo cuando corresponde. Para entrar a tu cuenta, abrí `/mcp` y elegí `empify`.
 
@@ -98,7 +99,7 @@ Con eso quedan instaladas las seis habilidades y declarada la conexión a `https
 Funciona en los planes Free, Pro, Max, Ultra, Team y Enterprise, con **Code execution and file creation** activado (en Settings, Capabilities). En Team y Enterprise, quien administra puede haber desactivado la subida de habilidades propias.
 
 1. Bajá los .zip que quieras de la carpeta [`descargas/`](descargas/) (empezá por `empify-base.zip`).
-2. Entrá a **Customize** (Personalizar), abrí **Skills**, tocá **+**, después **+ Create skill** y elegí **Upload a skill**.
+2. Entrá a **Personalización** (en inglés, **Customize**), abrí **Skills**, tocá **+**, después **+ Create skill** y elegí **Upload a skill**.
 3. Subí un .zip por vez. Cada uno ya tiene la carpeta de la habilidad como raíz, que es lo que pide claude.ai.
 4. Activá la habilidad en la lista y probá un pedido.
 

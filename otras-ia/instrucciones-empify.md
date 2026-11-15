@@ -4,7 +4,7 @@ Este archivo es para quien usa una IA que no instala las habilidades de este rep
 
 ## Dónde pegarlo
 
-- **ChatGPT:** Configuración, Personalización, instrucciones personalizadas. Tiene un límite de caracteres que depende del plan; el bloque de abajo está hecho corto para entrar (poco más de 1.200 caracteres). También sirve como instrucciones de un proyecto.
+- **ChatGPT:** Configuración, Personalización, instrucciones personalizadas. Tiene un límite de caracteres que depende del plan; el bloque de abajo está hecho corto para entrar (unos 1.300 caracteres). También sirve como instrucciones de un proyecto.
 - **Cursor:** en las reglas de usuario (User Rules) de la configuración, o en un archivo `AGENTS.md` en la raíz de tu proyecto.
 - **Otras IA:** en el campo de instrucciones o de "contexto personalizado" que tenga.
 
