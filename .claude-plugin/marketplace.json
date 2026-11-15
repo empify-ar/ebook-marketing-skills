@@ -1,0 +1,19 @@
+{
+  "name": "empify",
+  "description": "Habilidades y conexión de Empify para vendedores de ebooks.",
+  "owner": {
+    "name": "Empify",
+    "url": "https://empify.com.ar"
+  },
+  "plugins": [
+    {
+      "name": "empify",
+      "source": "./",
+      "description": "Conexión a tu cuenta de Empify y seis habilidades para vender mejor tus ebooks.",
+      "version": "1.0.0",
+      "author": { "name": "Empify" },
+      "homepage": "https://empify.com.ar/conectar-ia",
+      "license": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "empify": {
+      "type": "http",
+      "url": "https://empify.com.ar/api/mcp"
+    }
+  }
+}

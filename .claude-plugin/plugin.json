@@ -1,0 +1,13 @@
+{
+  "name": "empify",
+  "displayName": "Empify",
+  "version": "1.0.0",
+  "description": "Conecta tu cuenta de Empify con Claude Code y suma habilidades para validar ideas, escribir textos de anuncio, leer ventas y visitas y revisar tu página de venta.",
+  "author": {
+    "name": "Empify",
+    "url": "https://empify.com.ar"
+  },
+  "homepage": "https://empify.com.ar/conectar-ia",
+  "license": "MIT",
+  "keywords": ["empify", "ebooks", "mcp", "ventas", "anuncios"]
+}
