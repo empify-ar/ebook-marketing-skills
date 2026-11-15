@@ -31,8 +31,8 @@ Para empezar alcanza con una campaña, un conjunto y pocas piezas. [General] Con
 Primero mirá `ventas` (período `90_dias` o `todo`) y `visitas_tienda`.
 
 - **Hay ventas registradas con cierta frecuencia:** el evento de compra es el candidato natural. [General] Meta necesita juntar una cantidad de eventos por semana para aprender bien; cuántos exactamente lo publica Meta y cambia, que el vendedor lo lea en su ayuda.
-- **Hay pocas ventas o ninguna:** optimizar por compra deja a Meta sin material para aprender. Se puede optimizar por un evento anterior que el píxel sí reciba (por ejemplo, ver el contenido de la página o iniciar la compra), o usar un objetivo de tráfico a la tienda. Contrapartida: llega más gente que mira y no compra. Se pasa a compra cuando haya historial.
-- **Qué eventos manda su tienda a su píxel:** [Cuenta] Empify no lo informa por la conexión. El vendedor lo comprueba en el Administrador de eventos de Meta; al elegir el evento en el conjunto, solo aparecen los que el píxel recibió alguna vez. Si no ve ninguno, el primer trabajo es de medición, no de anuncios: decíselo.
+- **Hay pocas ventas o ninguna:** optimizar por compra deja a Meta sin material para aprender. Se puede optimizar por un evento anterior que el píxel sí reciba (por ejemplo, iniciar la compra), o usar un objetivo de tráfico a la tienda. Contrapartida: llega más gente que mira y no compra. Se pasa a compra cuando haya historial.
+- **Qué eventos manda su tienda a su píxel:** [Cuenta] Empify no lo informa por la conexión. El vendedor lo comprueba en el Administrador de eventos de Meta; al elegir el evento en el conjunto, Meta suele marcar cuáles recibió el píxel. Para que la tienda le mande eventos, el vendedor carga el identificador de su píxel en el panel de su tienda de Empify. Si no ve ninguno, el primer trabajo es de medición, no de anuncios: decíselo.
 
 ## 4. Ubicaciones
 
@@ -50,7 +50,7 @@ Primero mirá `ventas` (período `90_dias` o `todo`) y `visitas_tienda`.
 No recomiendes un monto. Pensalo con sus números, de a una pregunta:
 
 1. ¿Cuánto puede gastar en esta prueba sin que le duela? Ese es el techo, y lo pone él.
-2. ¿Cuánto le queda por venta? Precio del ebook (`pagina_de_venta.precio_ars`, o el de dólares) menos lo que se lleva Empify y el medio de pago; `ventas` informa lo que su plan permite ver.
+2. ¿Cuánto le queda por venta? Precio del ebook (`pagina_de_venta.precio_ars`) menos lo que se lleva Empify y el medio de pago; `ventas` informa lo que su plan permite ver.
 3. Cuenta simple: el costo por venta que no lo hace perder es, como mucho, lo que le queda por venta. Mostrá la cuenta con sus datos.
 4. Con la plata de la prueba y el costo esperado por visita, ¿alcanza para juntar suficientes visitas y resultados como para aprender algo? Si no alcanza, decíselo: es mejor una prueba más corta y concentrada que una repartida. Es una advertencia sobre cuánto se aprende, no una promesa de ventas.
 5. Moneda: la cuenta publicitaria puede estar en una moneda y el ebook en otra. Pesos y dólares no se suman ni se convierten por tu cuenta: si hace falta, que él diga el tipo de cambio que usa.

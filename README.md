@@ -180,7 +180,7 @@ La habilidad `meta-ads-para-ebooks-de-empify` es la única con licencia propia: 
 
 **¿Las habilidades mandan mis datos a algún lado?** No. Son archivos de texto con instrucciones; no ejecutan código ni hacen llamadas por su cuenta.
 
-**¿Puedo usar la habilidad de Meta Ads con otro producto u otra tienda?** No: es solo para ebooks y tiendas de tu cuenta de Empify, y se lo indica a tu IA. Si no tenés Empify conectado, la IA te lo dice y te ofrece conectarlo.
+**¿Puedo usar la habilidad de Meta Ads con otro producto u otra tienda?** No: es solo para ebooks y tiendas de tu cuenta de Empify, y se lo indica a tu IA. Si no tenés Empify conectado, la habilidad le indica a tu IA que te lo diga y te ofrezca conectarlo.
 
 **¿Por qué no hay código del servidor?** Porque la conexión es remota, por dirección web. No hay nada que instalar ni ejecutar en tu computadora.
 
