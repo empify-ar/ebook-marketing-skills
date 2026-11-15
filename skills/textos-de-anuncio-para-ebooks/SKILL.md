@@ -44,7 +44,8 @@ Para cada variante devuelta (`gancho`, `cuerpo`, `llamado_a_la_accion`):
 3. **Concreto antes que brillante.** Cantidades reales del ebook (cuántos capítulos, qué incluye) en lugar de adjetivos.
 4. **Llamado a la acción simple.** Un verbo y un destino: "Mirá el ebook".
 5. **Longitud.** Gancho de una línea; cuerpo corto, de 2 a 4 líneas para feed o historias.
-6. **Variantes para probar.** Entregá al menos 3 piezas que difieran en UNA sola cosa (gancho distinto con el mismo cuerpo, o ángulo distinto) para que la prueba enseñe algo.
+6. **Formato y largo.** Si cada anuncio trae `formato_habitual`, usalo como pista de dónde encaja (video corto vertical, imagen casera, retargeting) y sugerí esa red o ubicación; es una referencia general, no una garantía de rendimiento. Si trae `caracteres`, chequeá el largo contra los límites de la plataforma elegida (que el vendedor confirma en su ayuda oficial). Si no vienen, deducilo del estilo.
+7. **Variantes para probar.** Entregá al menos 3 piezas que difieran en UNA sola cosa (gancho distinto con el mismo cuerpo, o ángulo distinto) para que la prueba enseñe algo.
 
 ## Reglas duras (no negociables)
 
@@ -59,7 +60,7 @@ Para cada variante devuelta (`gancho`, `cuerpo`, `llamado_a_la_accion`):
 
 ## Paso 5. Entrega
 
-Presentá una tabla simple por variante: nombre, gancho, cuerpo, llamado a la acción, qué se prueba y a quién le habla. Después, las instrucciones de carga manual:
+Presentá una tabla simple por variante: nombre, gancho, cuerpo, llamado a la acción, formato sugerido (si viene `formato_habitual`), qué se prueba y a quién le habla. Si viene `contexto_del_ebook_usado`, mencioná en qué partes del ebook se apoyó el texto, para que el vendedor sepa qué corregir si algo no coincide. Después, las instrucciones de carga manual:
 
 1. Crear el anuncio en la plataforma elegida (Ads Manager, TikTok Ads, etc.).
 2. Pegar gancho y cuerpo en el texto principal y el llamado en el botón o el titular.

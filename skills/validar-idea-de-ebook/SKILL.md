@@ -40,10 +40,10 @@ Mostrá los argumentos antes de enviar solo si cambiaste algo de lo que dijo. Un
 
 ## Paso 4. Leer el resultado con criterio
 
-Los puntajes van de 0 a 100. Mirá en este orden (guía de lectura en [criterios.md](criterios.md)):
+Los puntajes van de 0 a 100 (si viene `escala_de_puntajes`, es la referencia oficial: más alto es mejor, salvo que en competencia alto significa poca competencia). Si viene `fecha_del_analisis`, mencionala: el rango de precios y la competencia son de esa fecha. Mirá en este orden (guía de lectura en [criterios.md](criterios.md)):
 
 1. **`analisis.criterios`**: cada lente tiene su nota. Fijate cuál es la más baja: ahí está el riesgo real. Ojo con "Nivel de competencia": un puntaje alto significa POCA competencia.
-2. **`demanda` y `competencia`** en texto, y las `fuentes`. Si las afirmaciones no tienen fuente, tomalas como estimación.
+2. **`demanda` y `competencia`** en texto, y las `fuentes`. Si `analisis.fuentes_web` es `no_encontradas` (o si `fuentes` viene vacío), decilo de entrada: demanda, competencia y precio son estimaciones de la IA sin respaldo web, y conviene contrastarlas a mano antes de decidir. Si hay fuentes, lo que no se apoya en ellas sigue siendo estimación. `precio_mercado` es un rango estimado, no una cotización (ver `precio_mercado_nota` si viene).
 3. **`compradores_simulados`**: son una simulación, no gente consultada. Buscá patrones: qué los engancha y qué objeción repiten. Las objeciones repetidas son lo más útil para la página de venta.
 4. **`promedio_interes` vs `promedio_compra`**: mucho interés con poca compra suele indicar tema atractivo pero sin disposición a pagar (precio, formato, o porque ya lo encuentran gratis).
 

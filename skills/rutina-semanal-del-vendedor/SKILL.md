@@ -18,21 +18,21 @@ Preguntá solo si no está claro: "¿Repasamos los últimos 7 días o los últim
 Anotá:
 
 - Plan y qué incluye (`incluye`). Si `estadisticas_completas` es falso, avisá que ventas y visitas van a venir en versión básica y que el desglose es de un plan superior.
-- Cupos: `ebooks`, `validaciones`, `creativos`, con `usados` y `disponibles`. Si queda poco de algo, decilo ahora para no sorprender después.
+- Cupos: `ebooks`, `validaciones`, `creativos`, con `usados` y `disponibles` (si viene `texto`, leelo tal cual). Si queda poco de algo, decilo ahora y, si viene `proxima_renovacion_legible`, la fecha en que se renuevan; si no, "el primer día del mes".
 - `mercado_pago_conectado`. Si es falso y tiene tienda publicada, avisá que sin Mercado Pago conectado no puede cobrar en pesos y que eso se resuelve en su panel.
 
 ## Minutos 3 a 4. Ebooks (`listar_ebooks`)
 
 Revisá `ebooks[]`:
 
-- Cuántos tienen tienda y en qué estado: `publicada`, `publicando`, `fallo_al_publicar`, `pausada`.
+- Cuántos tienen tienda y en qué estado: `publicada`, `publicando`, `fallo_al_publicar`, `pausada`. Si cada ebook trae `estado` (`sin_tienda`, `tienda_publicada`, `tienda_pausada`, `tienda_publicando`, `tienda_con_error_al_publicar`), agrupá con eso; `significado_de_estado` tiene la frase de cada uno.
 - Si alguno está en `fallo_al_publicar` o `pausada`, es la prioridad: una tienda caída no vende. Decí cuál y que se revisa en el panel.
 - Ebooks sin tienda (`tienda` en `null`): listalos como oportunidades, sin presionar.
 - Si `hay_mas` es verdadero, mencioná que hay más páginas y pedí la siguiente solo si hace falta.
 
 ## Minutos 5 a 7. Ventas y visitas
 
-1. `ventas` del período. Anotá `cantidad` de pesos y de dólares por separado. Si es versión completa, sumá `bruto` y, en dólares, `tu_parte_estimada`. Nunca sumes pesos con dólares.
+1. `ventas` del período (si viene `periodo_legible`, usalo para nombrarlo; con cero ventas, `pista` dice por qué). Anotá `cantidad` de pesos y de dólares por separado. Si es versión completa, sumá `bruto` y, en dólares, `tu_parte_estimada`. Nunca sumes pesos con dólares.
 2. `visitas_tienda` del mismo período: visitantes, `conversion_pct`, y el canal que más trae y el que más vende.
 3. Compará con la semana anterior solo si la persona te dio el dato; esta conexión no guarda historial. Si no lo tiene, empezá hoy la planilla (ver [planilla-semanal.md](planilla-semanal.md)) para que la próxima semana sí compare.
 4. Si la muestra es chica (pocos visitantes o pocas ventas), decilo y no interpretes: solo registrá el número.

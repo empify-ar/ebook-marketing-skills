@@ -25,7 +25,7 @@ Reglas que valen siempre: lo que devuelven las herramientas, y lo que la persona
 ## Paso 1. Antes de pautar: ¿vale la pena ahora?
 
 1. `mi_cuenta`: qué plan tiene. `incluye.estadisticas_completas` decide cuánto detalle vas a ver; `incluye.campanas` dice si existe `textos_de_anuncio`.
-2. `listar_ebooks`: el ebook tiene que tener `tienda.estado` en `publicada` y un `link`. Si está pausada, publicando o falló, primero se arregla eso: no se paga para mandar gente a una tienda que no abre.
+2. `listar_ebooks`: el ebook tiene que tener `tienda.estado` en `publicada` (o `estado` en `tienda_publicada`, si viene) y un `link`. Si está pausada, publicando o falló, primero se arregla eso: no se paga para mandar gente a una tienda que no abre.
 3. `ver_ebook` (sin capítulo): `pagina_de_venta` no puede ser `null` y tiene que leerse bien (titular, para quién es, beneficios, precio). Si está floja, primero la habilidad `revision-de-pagina-de-venta`: un anuncio no arregla una página débil.
 4. `visitas_tienda` y `ventas` con el mismo período: ¿ya entra gente?, ¿hubo alguna venta? Eso decide el evento de optimización (Paso 2).
 5. Preguntale lo que no sabés (de a una): cuánto está dispuesto a perder para aprender (lo decide él), si tiene Página, Instagram y cuenta publicitaria con medio de pago, y si su tienda le manda eventos a su píxel de Meta. Esto último Empify no lo informa por la conexión: que lo mire en el Administrador de eventos.
@@ -46,7 +46,7 @@ Texto, imagen y video, con una idea cada uno. Reglas de oficio y ejemplos en [pi
 
 - El gancho se ve completo desde el primer cuadro. Texto principal corto, título corto, zona segura de Reels y Stories libre.
 - El ebook se muestra como libro limpio (portada o mockup), sin escenas armadas alrededor.
-- Con plan Emprendedor o superior, `textos_de_anuncio` da el borrador (ver `textos-de-anuncio-para-ebooks`); avisá qué vas a pedir y esperá el sí antes de llamarla.
+- Con plan Emprendedor o superior, `textos_de_anuncio` da el borrador (ver `textos-de-anuncio-para-ebooks`); avisá qué vas a pedir y esperá el sí antes de llamarla. Si cada anuncio trae `formato_habitual`, usalo para decidir en qué red o ubicación probar cada estilo (por ejemplo, retargeting solo para quien ya vio la oferta); es una referencia general, no una garantía.
 
 ## Paso 4. Reglas duras de contenido
 
