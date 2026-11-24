@@ -4,11 +4,11 @@
 
 <h1 align="center">Empify en tu IA</h1>
 
-<p align="center">Conectá tu cuenta de Empify con Claude, ChatGPT o tu editor, y sumá habilidades para vender mejor tus ebooks.</p>
+<p align="center">Conectá tu cuenta de Empify con Claude y otras IA, y sumá habilidades para vender mejor tus ebooks.</p>
 
 ## Qué es
 
-[Empify](https://empify.com.ar) es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. Esta conexión permite que tu IA (Claude, ChatGPT, Cursor y otras) vea tus ebooks, tus ventas y tus visitas, y te ayude a validar ideas y a escribir textos de anuncio, sin que tengas que copiar y pegar datos. Este repositorio es el regalo para quien la conecta: los pasos, ocho pedidos de ejemplo y siete habilidades listas para instalar que le enseñan a tu IA a trabajar bien con tu cuenta.
+[Empify](https://empify.com.ar) es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. Esta conexión permite que tu IA (probada con Claude; en ChatGPT depende de tu plan) vea tus ebooks, tus ventas y tus visitas, y te ayude a validar ideas y a escribir textos de anuncio, sin que tengas que copiar y pegar datos. Este repositorio es el regalo para quien la conecta: los pasos, ocho pedidos de ejemplo y siete habilidades listas para instalar que le enseñan a tu IA a trabajar bien con tu cuenta.
 
 Para usar el kit hace falta una cuenta de Empify, y la cuenta gratis alcanza para empezar. Algunas funciones piden un plan pago: mirá [Límites por plan](#límites-por-plan).
 
