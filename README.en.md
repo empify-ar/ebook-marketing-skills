@@ -1,6 +1,6 @@
 # 12 Claude skills to sell your ebook. They work with no account.
 
-![12 habilidades de Claude para vender tu ebook](assets/portada.png)
+![12 Claude skills to sell your ebook (image in Spanish)](assets/portada.png)
 
 From idea to launch: pick the idea, outline the book, write the sales page, set the price, plan the ads and the 14 launch days. If you also connect your [Empify](https://empify.com.ar) account, an Argentine platform for creating and selling ebooks, your AI reads your sales and visits and writes you the week's decision. You make the changes.
 
