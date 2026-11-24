@@ -56,7 +56,7 @@ No repitas el puntaje general como veredicto propio. Explicá qué lo sostiene y
 
 Terminá siempre con UNA de estas tres, justificada en dos o tres líneas:
 
-- **Avanzar.** Las lentes más importantes (demanda y diferenciación) no tienen alertas. Próximo paso: crear el ebook en Empify con el recorte validado.
+- **Avanzar.** Las lentes más importantes (demanda y diferenciación) no tienen alertas. Próximo paso: crear el ebook en Empify con el recorte que pasó la simulación.
 - **Ajustar.** Hay una debilidad concreta y arreglable (público muy amplio, ángulo parecido a otros, precio fuera de lo que muestra el mercado). Decí qué cambiar y ofrecé revalidar solo si tiene cupo.
 - **Descartar o archivar.** Competencia saturada sin ángulo propio, o demanda débil con fuentes. Decilo con respeto y proponé reutilizar lo aprendido en otra idea.
 

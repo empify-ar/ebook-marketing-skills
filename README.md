@@ -17,7 +17,7 @@ Después, dentro de Claude Code, escribí `/empify:empezar` (o `/empify:empezar 
 **claude.ai (web y escritorio):**
 
 1. En Ajustes, Capacidades, activá la ejecución de código y creación de archivos (en pantallas nuevas: **Create and edit files**).
-2. Bajá un `.zip` de [`descargas/`](descargas/). Empezá por `idea-de-ebook.zip`.
+2. Bajá un `.zip` de la [última versión](https://github.com/empify-ar/ebook-marketing-skills/releases/latest). Empezá por [`idea-de-ebook.zip`](https://github.com/empify-ar/ebook-marketing-skills/releases/latest/download/idea-de-ebook.zip).
 3. En **Personalización** (**Customize**) abrí **Skills**, tocá **+**, **+ Create skill** y **Upload a skill**.
 4. Subí un `.zip` por vez.
 
