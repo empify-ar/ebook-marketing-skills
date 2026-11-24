@@ -1,4 +1,4 @@
-EJEMPLO CON DATOS INVENTADOS · 24-nov-2026 · La persona, la marca, el ebook y los anuncios son inventados. Las fechas salen del calendario de la habilidad. No es un caso real ni una cuenta de Empify.
+EJEMPLO CON DATOS INVENTADOS · 24-nov-2026 · La persona, la marca, el ebook y los anuncios son inventados. Las fechas salen de las reglas del calendario de la habilidad. No es un caso real ni una cuenta de Empify.
 
 # 5. Anuncios por fecha, con `angulos-de-anuncio-por-fecha`
 
@@ -34,7 +34,7 @@ Quedaron afuera "Rutina" (el libro no está organizado por días) y "Un rato sin
 
 ## Paso 4. Las variantes de cada ángulo
 
-Con presupuesto chico, dos o tres por ángulo. La frase, el botón y el destino son los mismos dentro de cada ángulo: lo único que cambia es la imagen.
+Con presupuesto chico, dos o tres por ángulo (en "Regalo", la E se suma solo mientras dura el precio de lanzamiento). La frase, el botón y el destino son los mismos dentro de cada ángulo: lo único que cambia es la imagen.
 
 | Ángulo | Variante | Imagen | Nombre del anuncio |
 |---|---|---|---|
