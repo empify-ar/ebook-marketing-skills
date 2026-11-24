@@ -1,20 +1,43 @@
-# 12 habilidades para vender tu ebook con IA. Andan sin cuenta.
+# 12 habilidades de Claude para vender tu ebook. Andan sin cuenta.
 
-**Y si conectás tu cuenta de [Empify](https://empify.com.ar), una plataforma argentina para crear ebooks y venderlos, tu IA puede leer tus ventas y tus visitas y escribirte la decisión de la semana. Los cambios los hacés vos.**
+De la idea al lanzamiento: elegir la idea, armar el índice, escribir la página de venta, poner precio, pensar los anuncios y planear los 14 días de salida. Si además conectás tu cuenta de [Empify](https://empify.com.ar), una plataforma argentina para crear ebooks y venderlos, tu IA lee tus ventas y tus visitas y te escribe la decisión de la semana. Los cambios los hacés vos.
 
 Abierto (licencia MIT) · en español · sin cuenta para empezar · probado con Claude · [English](README.en.md)
 
 ## Instalación
 
-**Claude Code (terminal).** Instala las habilidades, los siete comandos y la conexión a Empify declarada.
+**Claude Code (terminal):**
 
 ```bash
-claude plugin marketplace add empify-ar/empify-ia && claude plugin install empify@empify
+claude plugin marketplace add empify-ar/ebook-marketing-skills && claude plugin install empify@empify
 ```
 
-Dentro de Claude Code, los mismos dos pasos son `/plugin marketplace add empify-ar/empify-ia` y `/plugin install empify@empify`.
+Después, dentro de Claude Code, escribí `/empify:empezar` (o `/empify:empezar sin cuenta`).
 
-**claude.ai (web y escritorio).** Bajá los `.zip` de [`descargas/`](descargas/): uno por habilidad y `empify-habilidades-todas.zip`, que junta todas y sirve para descomprimir en una carpeta, no para subir de una vez. Empezá por `idea-de-ebook.zip`. En **Personalización** (en inglés, **Customize**) abrí **Skills**, tocá **+**, después **+ Create skill** y **Upload a skill**, y subí un `.zip` por vez. Pide tener activada la ejecución de código y creación de archivos (en Ajustes, Capacidades; en pantallas nuevas se llama **Create and edit files**). En Team y Enterprise, quien administra puede haber desactivado las habilidades propias.
+**claude.ai (web y escritorio):**
+
+1. En Ajustes, Capacidades, activá la ejecución de código y creación de archivos (en pantallas nuevas: **Create and edit files**).
+2. Bajá un `.zip` de [`descargas/`](descargas/). Empezá por `idea-de-ebook.zip`.
+3. En **Personalización** (**Customize**) abrí **Skills**, tocá **+**, **+ Create skill** y **Upload a skill**.
+4. Subí un `.zip` por vez.
+
+Más detalle en [Instalación en detalle](#instalación-en-detalle).
+
+## Qué querés, qué escribís, qué recibís
+
+Los siete comandos de Claude Code (con el complemento instalado llevan el prefijo `/empify:`).
+
+| Qué querés | Qué escribís | Qué recibís | ¿Pide cuenta? |
+|---|---|---|---|
+| Arrancar y saber por dónde seguir | `/empify:empezar` | Tu perfil de vendedor guardado (o un bloque para pegar), el estado de la conexión en una línea y un comando recomendado para seguir | No: con `/empify:empezar sin cuenta` se arma igual |
+| Planear el lanzamiento | `/empify:lanzar nombre del ebook` | Un tablero de 14 días con fechas, casillas y criterio para seguir, ajustar o frenar | No; con cuenta parte del estado real de tu tienda |
+| Saber cómo viene la semana | `/empify:semana` | Informe de una pantalla: cinco cifras frente a la semana anterior, una observación honesta, una decisión y la fila para tu planilla | Sí |
+| Enterarte si algo se rompió | `/empify:guardia` | Revisión corta: tienda pausada o con falla al publicar, Mercado Pago sin conectar, cupo bajo | Sí |
+| Elegir qué ebook publicitar | `/empify:elegir` | Tabla de hasta cinco ebooks y una recomendación, diciendo si la muestra alcanza | Sí |
+| Textos de anuncio | `/empify:anuncios nombre del ebook` | Al menos tres variantes de gancho, cuerpo y llamado, que difieren en una sola cosa, y una lista de revisión | Sí; la herramienta empieza en el plan Emprendedor |
+| Arreglar la conexión | `/empify:doctor` | Veredicto en una línea y pasos para volver a conectar | Sí |
+
+Sin comandos, las habilidades abiertas también se activan solas cuando lo pedís con tus palabras. Por ejemplo: "Tengo dos ideas de ebook, ¿por cuál sigo?", "Armame la estructura de un ebook sobre ahorro para freelancers", "Revisá mi página de venta" o "Armame el plan de 14 días para lanzar mi ebook".
 
 ## Así se ve
 
@@ -48,21 +71,11 @@ Qué no pude saber: cuánto gastaste ni qué resultados tuvieron tus anuncios en
 conexión no los ve.
 ```
 
-## Qué querés, qué escribís, qué recibís
+## Instalación en detalle
 
-Los siete comandos de Claude Code (con el complemento instalado llevan el prefijo `/empify:`).
+**Claude Code.** El comando de arriba instala las habilidades, los siete comandos y la conexión declarada. Dentro de Claude Code, los mismos dos pasos son `/plugin marketplace add empify-ar/ebook-marketing-skills` y `/plugin install empify@empify`.
 
-| Qué querés | Qué escribís | Qué recibís | Cuenta de Empify |
-|---|---|---|---|
-| Arrancar y saber por dónde seguir | `/empify:empezar` | Tu perfil de vendedor guardado (o un bloque para pegar), el estado de la conexión en una línea y un comando recomendado para seguir | No hace falta: con `/empify:empezar sin cuenta` se arma igual |
-| Planear el lanzamiento | `/empify:lanzar nombre del ebook` | Un tablero de 14 días con fechas, casillas y criterio para seguir, ajustar o frenar | No hace falta; con cuenta parte del estado real de tu tienda |
-| Saber cómo viene la semana | `/empify:semana` | Informe de una pantalla: cinco cifras frente a la semana anterior, una observación honesta, una decisión y la fila para tu planilla | Sí |
-| Enterarte si algo se rompió | `/empify:guardia` | Revisión corta: tienda pausada o con falla al publicar, Mercado Pago sin conectar, cupo bajo | Sí |
-| Elegir qué ebook publicitar | `/empify:elegir` | Tabla de hasta cinco ebooks y una recomendación, diciendo si la muestra alcanza | Sí |
-| Textos de anuncio | `/empify:anuncios nombre del ebook` | Al menos tres variantes de gancho, cuerpo y llamado, que difieren en una sola cosa, y una lista de revisión | Sí; la herramienta de Empify empieza en el plan Emprendedor |
-| Arreglar la conexión | `/empify:doctor` | Veredicto en una línea y pasos para volver a conectar | Sí |
-
-Sin comandos, las habilidades abiertas también se activan solas cuando lo pedís con tus palabras. Por ejemplo: "Tengo dos ideas de ebook, ¿por cuál sigo?", "Armame la estructura de un ebook sobre ahorro para freelancers", "Revisá mi página de venta" o "Armame el plan de 14 días para lanzar mi ebook".
+**claude.ai.** En [`descargas/`](descargas/) hay un `.zip` por habilidad y `empify-habilidades-todas.zip`, que junta todas y sirve para descomprimir en una carpeta, no para subir de una vez. Si tu Claude está en español, el menú se llama **Personalización**; en inglés, **Customize**. En Team y Enterprise, quien administra puede haber desactivado las habilidades propias.
 
 ## Las dos partes
 
@@ -181,7 +194,7 @@ Las recetas están en [`RECOMENDADOS.md`](RECOMENDADOS.md#recetas-para-combinar)
 
 El catálogo de este repositorio, además de `empify`, lista complementos de otros autores. **No son de Empify ni los respalda su autor.** No hay nada copiado acá: cada uno se baja del repositorio de su autor, en una versión exacta que revisamos (fijada con un código de versión), y se rige por la licencia de su autor. Antes de instalar uno, leelo: pueden traer comandos y scripts. Revisamos manifiesto, licencia y ganchos declarados; no leímos todo su código.
 
-Primero agregá el catálogo (una sola vez): `/plugin marketplace add empify-ar/empify-ia`.
+Primero agregá el catálogo (una sola vez): `/plugin marketplace add empify-ar/ebook-marketing-skills`.
 
 | Complemento | Autor | Licencia | Para qué le sirve a quien vende un ebook | Instalar | Cuidado |
 |---|---|---|---|---|---|

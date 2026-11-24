@@ -1,6 +1,3 @@
 .DS_Store
 dist/
 *.log
-
-# Trabajo interno, no se publica
-.workflow/

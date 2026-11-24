@@ -2,7 +2,7 @@
 
 ## Cómo avisar de un problema
 
-Escribí a **hola@empify.com.ar** con el asunto "Seguridad: empify-ia". Contá qué viste, en qué archivo o paso, y cómo repetirlo. No publiques el problema en un issue abierto antes de que lo hayamos visto.
+Escribí a **hola@empify.com.ar** con el asunto "Seguridad: ebook-marketing-skills". Contá qué viste, en qué archivo o paso, y cómo repetirlo. No publiques el problema en un issue abierto antes de que lo hayamos visto.
 
 No mandes contraseñas, claves ni datos de compradores, y no pegues el contenido de tu cuenta de Empify en el mail.
 

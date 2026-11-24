@@ -1,13 +1,39 @@
-# 12 skills to sell your ebook with AI. They work with no account.
+# 12 Claude skills to sell your ebook. They work with no account.
 
-**And if you connect your [Empify](https://empify.com.ar) account, an Argentine platform for creating and selling ebooks, your AI can read your sales and visits and write you the week's decision. You make the changes.**
+From idea to launch: pick the idea, outline the book, write the sales page, set the price, plan the ads and the 14 launch days. If you also connect your [Empify](https://empify.com.ar) account, an Argentine platform for creating and selling ebooks, your AI reads your sales and visits and writes you the week's decision. You make the changes.
 
 Open source (MIT) · in Spanish (Argentina) · no account needed to start · tested with Claude · [Español](README.md)
 
 ## Install
 
-- **Claude Code (terminal):** `claude plugin marketplace add empify-ar/empify-ia && claude plugin install empify@empify`. Inside Claude Code: `/plugin marketplace add empify-ar/empify-ia`, then `/plugin install empify@empify`.
-- **claude.ai (web and desktop):** download the `.zip` files from [`descargas/`](descargas/) (one per skill, plus `empify-habilidades-todas.zip` with all of them, which is for unzipping into a folder, not for uploading at once). In Customize, open Skills, tap +, then Create skill, then Upload a skill. Code execution and file creation must be on.
+**Claude Code (terminal):**
+
+```bash
+claude plugin marketplace add empify-ar/ebook-marketing-skills && claude plugin install empify@empify
+```
+
+Then, inside Claude Code, type `/empify:empezar` (or `/empify:empezar sin cuenta` to start with no account).
+
+**claude.ai (web and desktop):**
+
+1. In Settings, Capabilities, turn on code execution and file creation (on newer screens: **Create and edit files**).
+2. Download a `.zip` from [`descargas/`](descargas/). Start with `idea-de-ebook.zip`.
+3. In **Customize**, open **Skills**, tap **+**, **+ Create skill** and **Upload a skill**.
+4. Upload one `.zip` at a time.
+
+More in [Install details](#install-details).
+
+## What you want, what you type, what you get
+
+| What you want | What you type | What you get | Needs an account? |
+|---|---|---|---|
+| Start and know where to go next | `/empify:empezar` ("start") | Your seller profile saved, the connection status in one line, and one recommended command | Not required (`/empify:empezar sin cuenta`) |
+| Plan a launch | `/empify:lanzar` ("launch") | A 14-day board with dates and a keep, adjust or stop criterion | Not required |
+| See how the week is going | `/empify:semana` ("week") | A one-screen report: five numbers against last week, one decision, a row for your spreadsheet | Yes |
+| Find out if something broke | `/empify:guardia` ("watch") | A short check: store paused or failing, Mercado Pago not connected, low quota | Yes |
+| Pick which ebook to advertise | `/empify:elegir` ("choose") | A table of up to five ebooks and one recommendation | Yes |
+| Ad copy | `/empify:anuncios` ("ads") | At least three variants of hook, body and call to action | Yes; the tool starts at the Entrepreneur plan |
+| Fix the connection | `/empify:doctor` | A one-line verdict and the steps to reconnect | Yes |
 
 ## How it looks
 
@@ -41,17 +67,11 @@ What I could not see: ad spend and results on Meta; this connection cannot see t
 
 [Empify](https://empify.com.ar) is an Argentine platform for creating ebooks with AI and selling them from your own store. The skills are written in Spanish, for sellers in Argentina and Latin America. If you read Spanish you can use them as they are; they are plain text files.
 
-## What you want, what you type, what you get
+## Install details
 
-| What you want | What you type | What you get | Empify account |
-|---|---|---|---|
-| Start and know where to go next | `/empify:empezar` ("start") | Your seller profile saved, the connection status in one line, and one recommended command | Not required (`/empify:empezar sin cuenta`) |
-| Plan a launch | `/empify:lanzar` ("launch") | A 14-day board with dates and a keep, adjust or stop criterion | Not required |
-| See how the week is going | `/empify:semana` ("week") | A one-screen report: five numbers against last week, one decision, a row for your spreadsheet | Yes |
-| Find out if something broke | `/empify:guardia` ("watch") | A short check: store paused or failing, Mercado Pago not connected, low quota | Yes |
-| Pick which ebook to advertise | `/empify:elegir` ("choose") | A table of up to five ebooks and one recommendation | Yes |
-| Ad copy | `/empify:anuncios` ("ads") | At least three variants of hook, body and call to action | Yes; Empify's tool starts at the Entrepreneur plan |
-| Fix the connection | `/empify:doctor` | A one-line verdict and the steps to reconnect | Yes |
+**Claude Code.** The command above installs the skills, the seven commands and the declared connection. Inside Claude Code the same two steps are `/plugin marketplace add empify-ar/ebook-marketing-skills`, then `/plugin install empify@empify`.
+
+**claude.ai.** [`descargas/`](descargas/) has one `.zip` per skill, plus `empify-habilidades-todas.zip` with all of them, which is for unzipping into a folder, not for uploading at once. On Team and Enterprise, an admin may have turned custom skills off.
 
 ## The two parts
 

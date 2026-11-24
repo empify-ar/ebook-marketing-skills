@@ -10,7 +10,7 @@
       "name": "empify",
       "source": "./",
       "description": "Doce habilidades abiertas para vender un ebook, que andan sin cuenta, y la conexión a tu cuenta de Empify con siete habilidades, siete comandos y cuatro rutinas.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "author": {
         "name": "Empify"
       },

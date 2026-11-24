@@ -2,6 +2,15 @@
 
 Formato: una versión por título, la más nueva arriba.
 
+## 2.0.1 (24 de noviembre de 2026)
+
+**Qué cambia**
+
+- El repositorio pasa a llamarse `empify-ar/ebook-marketing-skills`. El comando de instalación es `claude plugin marketplace add empify-ar/ebook-marketing-skills && claude plugin install empify@empify`. El complemento y el catálogo siguen llamándose `empify`, y los comandos siguen siendo `/empify:`.
+- Primera pantalla del README y de `README.en.md`: título con "Claude", Empify nombrado una sola vez, el comando de instalación a la vista con el paso siguiente (`/empify:empezar`), los pasos de claude.ai en una lista corta y la tabla de comandos antes del ejemplo. El ejemplo del informe semanal y los detalles de instalación pasan más abajo, sin cambios de contenido.
+- `SECURITY.md` usa el nombre nuevo en el asunto del mail.
+- Se borra del `.gitignore` una regla de trabajo interno que no hacía falta en el repositorio.
+
 ## 2.0.0 (24 de noviembre de 2026)
 
 **Qué entra**
