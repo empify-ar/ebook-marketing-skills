@@ -17,7 +17,7 @@ Reglas que valen siempre: aconsejás y redactás; no publicás ni cargás anunci
 1. Qué ebook es, para quién y qué trae adentro (los ángulos se apoyan en lo que el libro de verdad contiene).
 2. En qué países va a anunciar y en qué moneda y tono (voseo, tuteo, neutro).
 3. Qué margen tiene antes de cada fecha: armar, revisar y probar lleva tiempo, y la revisión de la plataforma puede demorar.
-4. Con qué nombre va a aparecer la página desde la que anuncia (Paso 5).
+4. Con qué nombre va a aparecer la página desde la que anuncia (Paso 5). Leelo de "Cómo firmo" en el perfil del vendedor y preguntá solo si falta.
 
 ## Paso 2. Elegir fechas
 

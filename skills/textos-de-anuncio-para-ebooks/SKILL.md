@@ -35,7 +35,7 @@ Elegí dos ángulos y proponelos; que el vendedor decida o decidí vos con una f
 2. Esta herramienta no descuenta cupo mensual, pero tiene tope por hora. Avisá que vas a pedir los textos y esperá el visto bueno.
 3. Pasá `libro_id`, `angulo` (hasta 300 caracteres), `publico` (hasta 200) y `estilos` EXPLÍCITOS. Si no los pasás, la herramienta usa `vendedor`, `antes_despues` y `pov`, y uno de esos no conviene.
    - Recomendados: `vendedor`, `pov`, `retargeting`.
-   - Evitá `antes_despues` (invita a prometer transformaciones), `testimonio` (inventa voces de clientes) y `ugc_ia` (simula a un creador real). Usalos solo si el vendedor los pide y entiende el riesgo.
+   - `testimonio` va con un testimonio real que la persona tenga (con permiso de quien lo dijo); `antes_despues`, con un caso real, sin prometer transformaciones. `ugc_ia` (una persona hablando a cámara) sirve si el texto no se presenta como el mensaje de una clienta real; revisalo y editalo.
    - `ugly_ad`: aceptable si el texto no pretende ser un mensaje real de una persona.
 
 ## Paso 4. Editar con oficio (la herramienta es el borrador)
@@ -56,7 +56,7 @@ Para cada variante devuelta (`gancho`, `cuerpo`, `llamado_a_la_accion`):
 - Sin testimonios inventados ni reseñas, estrellas o "miles de personas ya lo compraron" que no estén en los datos.
 - Sin cifras inventadas: toda cifra tiene que salir de `ver_ebook`, de las ventas o de algo que el vendedor confirme.
 - Sin antes y después.
-- Sin urgencia falsa ("últimas unidades" en un ebook digital, cuentas regresivas que no existen). Una fecha, un cupo o un "una sola vez" se escriben solo si son ciertos y la persona los verificó (ver `precio-y-oferta` y `escalera-de-ofertas`).
+- Sin urgencia falsa ("últimas unidades" en un ebook digital). Una fecha, un cupo o un "una sola vez" se escriben solo si son ciertos y la persona los verificó (ver `precio-y-oferta` y `escalera-de-ofertas`).
 - Sin dirigirte a atributos personales ("¿Estás endeudado?", "Si tenés ansiedad..."): las políticas de Meta lo restringen. Hablá del tema, no de la persona.
 - Sin afirmaciones de salud, dinero o resultados sobre el cuerpo, ni comparar con marcas ajenas.
 - Respetá las políticas de anuncios de la plataforma elegida y decile al vendedor que las revise: no las conocés de memoria al día.

@@ -9,7 +9,7 @@ Completala con los números reales de la persona. Si un dato no está, queda "si
 | Precio de venta (pesos) | | Lo decide la persona |
 | Comisión de la plataforma de venta (% por venta) | | Página oficial de la plataforma (enlace y fecha) |
 | Tarifa del medio de pago (%) | | Página oficial o su propia cuenta de cobro (enlace y fecha) |
-| Impuestos sobre la venta o la tarifa | | Su contador / su situación impositiva |
+| Impuestos sobre la venta o la tarifa | | Su situación impositiva / quien le lleva los impuestos |
 | Costos propios por venta (por ejemplo, un bono con costo) | | La persona |
 | Gastos fijos del período (anuncios, herramientas) | | La persona |
 

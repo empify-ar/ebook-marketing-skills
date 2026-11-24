@@ -1,20 +1,21 @@
-> **Español:** this is the English summary. The full README, in Spanish (Argentina), is [README.md](README.md).
-
 # 12 skills to sell your ebook with AI. They work with no account.
 
-**And if you connect your Empify account, your AI reviews your store every week and writes you the decision. You make the changes.**
+**And if you connect your Empify account, your AI can read your sales and visits and write you the week's decision. You make the changes.**
 
-Open source (MIT) · in Spanish (Argentina) · no account needed to start · tested with Claude · the routines need your Empify account and a paid Claude plan
+Open source (MIT) · in Spanish (Argentina) · no account needed to start · tested with Claude · [Español](README.md)
 
-[Empify](https://empify.com.ar) is an Argentine platform for creating ebooks with AI and selling them from your own store. The skills are written in Spanish, for sellers in Argentina and Latin America. If you read Spanish you can use them as they are; any AI that reads plain text can load them.
+## Install
 
-## Demo
+- **Claude Code (terminal):** `claude plugin marketplace add empify-ar/empify-ia && claude plugin install empify@empify`. Inside Claude Code: `/plugin marketplace add empify-ar/empify-ia`, then `/plugin install empify@empify`.
+- **claude.ai (web and desktop):** download the `.zip` files from [`descargas/`](descargas/) (one per skill, plus `empify-habilidades-todas.zip` with all of them, which is for unzipping into a folder, not for uploading at once). In Customize, open Skills, tap +, then Create skill, then Upload a skill. Code execution and file creation must be on.
 
-**Short video: still to be recorded.** It will show, in about 20 seconds, how to ask for the weekly report and what comes back.
+## How it looks
 
-**Example with sample data** (the ebook and the numbers are made up to show the format; this is not a real account). This is what the `/empify:semana` command ("week") returns:
+This is what the `/empify:semana` command ("week") returns:
 
 ```text
+EXAMPLE WITH MADE-UP DATA, NOT A REAL ACCOUNT
+
 Data read on Monday, November 23, 2026 from mi_cuenta, listar_ebooks, ventas and visitas_tienda.
 Period: November 16 to 22, 2026.
 
@@ -36,14 +37,9 @@ page. Check again on Monday the 30th, same period.
 What I could not see: ad spend and results on Meta; this connection cannot see them.
 ```
 
-## Install (copy and paste)
+## What this is
 
-Items marked "untested" have not been run.
-
-- **Claude Code (terminal):** `claude plugin marketplace add empify-ar/empify-ia && claude plugin install empify@empify`. Inside Claude Code: `/plugin marketplace add empify-ar/empify-ia`, then `/plugin install empify@empify`. Tested on November 24, 2026 against a local copy of the repository; the same command with the GitHub name has not been run yet.
-- **claude.ai (web and desktop):** download the `.zip` files from [`descargas/`](descargas/) (one per skill, plus `empify-habilidades-todas.zip` with all of them, which is for unzipping into a folder, not for uploading at once). In Customize, open Skills, tap +, then Create skill, then Upload a skill. Code execution and file creation must be on. Steps follow Claude's help page of November 24, 2026; uploading these particular files is untested.
-- **Cursor:** unzip `empify-habilidades-todas.zip` into `~/.cursor/skills/`. Untested.
-- **ChatGPT and other AIs:** paste the block in [`otras-ia/instrucciones-empify.md`](otras-ia/instrucciones-empify.md), or the text of a `SKILL.md`. Untested.
+[Empify](https://empify.com.ar) is an Argentine platform for creating ebooks with AI and selling them from your own store. The skills are written in Spanish, for sellers in Argentina and Latin America. If you read Spanish you can use them as they are; they are plain text files, and we only tested them with Claude.
 
 ## What you want, what you type, what you get
 
@@ -61,9 +57,13 @@ Items marked "untested" have not been run.
 
 **Part 1: twelve skills that work with no account** (idea, structure, visual ebooks, sales page, price and offer, offer ladder, sales images, ad angles by date, 14-day launch, posts for social media, seller profile, next step). Plain text; nothing runs and nothing is sent anywhere. None promises sales or results.
 
-**Part 2: what your Empify account adds.** Seven more skills (context, idea validation with simulated buyers, ad copy, reading sales and visits, sales page review, weekly routine, connection doctor), seven commands and four routines. Connecting is done at `https://empify.com.ar/api/mcp`; the free plan is enough to start, and some features need a paid plan (see the table in the Spanish README). The AI can read your ebooks, sales and visits and write text. It cannot publish, edit your store, touch prices or payments, delete anything, upload ads or see your buyers' data.
+**Part 2: what your Empify account adds.** Seven more skills (context, idea validation with simulated buyers, ad copy, reading sales and visits, sales page review, weekly routine, connection doctor), seven commands and four routines. Connecting is done at `https://empify.com.ar/api/mcp`; the free plan is enough to start, and some features need a paid plan (see the table in the Spanish README). The AI can read your ebooks, sales and visits and write text. It cannot publish, edit your store, touch prices or payments, delete anything, upload ads or see your buyers' data. Other AIs: we only tested with Claude; each vendor's steps are at https://empify.com.ar/conectar-ia.
 
-**Routines** (scheduled tasks, need a paid Claude plan; untested running unattended): `informe-semanal` ("Monday's Decision", weekly), `guardia-diaria` ("The Night Watch", daily), `tanda-de-anuncios` ("The Batch", every 28 days, Entrepreneur plan or above) and `mantener-la-conexion` (keeps the connection alive). The connection is cut after 30 days without use, which is why 28 days.
+**Routines** (scheduled tasks, need a paid Claude plan): `informe-semanal` ("Monday's Decision", weekly), `guardia-diaria` ("The Night Watch", daily), `tanda-de-anuncios` ("The Batch", every 28 days, Entrepreneur plan or above) and `mantener-la-conexion` (keeps the connection alive). The connection is cut after 30 days without use, which is why 28 days.
+
+## What was tested
+
+Tested: the connection with Claude, in Spanish; the plugin passes the validator and installs together with the four recommended plugins. Not yet: the routines running on their own with the Empify connection, and uploading the `.zip` files to claude.ai.
 
 ## Recommended plugins by other authors
 

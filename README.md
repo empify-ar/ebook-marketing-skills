@@ -1,22 +1,28 @@
-> **English:** 12 skills to sell your ebook with AI. They work with no account.
-> If you also connect your [Empify](https://empify.com.ar) account, your AI reviews your store every week and writes you the decision. You make the changes.
-> Open source (MIT), in Spanish (Argentina). Full summary in English: [README.en.md](README.en.md).
-
 # 12 habilidades para vender tu ebook con IA. Andan sin cuenta.
 
-**Y si conectás tu cuenta de Empify, tu IA revisa tu tienda cada semana y te escribe la decisión. Los cambios los hacés vos.**
+**Y si conectás tu cuenta de Empify, tu IA puede leer tus ventas y tus visitas y escribirte la decisión de la semana. Los cambios los hacés vos.**
 
-Abierto (licencia MIT) · en español · sin cuenta para empezar · probado con Claude · las rutinas piden tu cuenta de Empify y un plan pago de Claude
+Abierto (licencia MIT) · en español · sin cuenta para empezar · probado con Claude · [English](README.en.md)
 
-## Demostración
+## Instalación
 
-**Video corto: todavía por grabar.** Va a mostrar, en unos 20 segundos, cómo se pide el informe de la semana y qué devuelve.
+**Claude Code (terminal).** Instala las habilidades, los siete comandos y la conexión a Empify declarada.
 
-Mientras tanto, esto es lo que entrega el comando `/empify:semana`.
+```bash
+claude plugin marketplace add empify-ar/empify-ia && claude plugin install empify@empify
+```
 
-**Ejemplo con datos de muestra** (el ebook y los números están inventados para mostrar el formato; no es una cuenta real):
+Dentro de Claude Code, los mismos dos pasos son `/plugin marketplace add empify-ar/empify-ia` y `/plugin install empify@empify`.
+
+**claude.ai (web y escritorio).** Bajá los `.zip` de [`descargas/`](descargas/): uno por habilidad y `empify-habilidades-todas.zip`, que junta todas y sirve para descomprimir en una carpeta, no para subir de una vez. Empezá por `idea-de-ebook.zip`. En **Personalización** (en inglés, **Customize**) abrí **Skills**, tocá **+**, después **+ Create skill** y **Upload a skill**, y subí un `.zip` por vez. Pide tener activada la ejecución de código y creación de archivos (en Ajustes, Capacidades; en pantallas nuevas se llama **Create and edit files**). En Team y Enterprise, quien administra puede haber desactivado las habilidades propias.
+
+## Así se ve
+
+Esto es lo que entrega el comando `/empify:semana`:
 
 ```text
+EJEMPLO CON DATOS INVENTADOS, NO ES UNA CUENTA REAL
+
 Datos leídos el lunes 23 de noviembre de 2026 de mi_cuenta, listar_ebooks, ventas y visitas_tienda.
 Período: del 16 al 22 de noviembre de 2026.
 
@@ -42,24 +48,6 @@ Qué no pude saber: cuánto gastaste ni qué resultados tuvieron tus anuncios en
 conexión no los ve.
 ```
 
-## Instalación (copiar y pegar)
-
-Elegí tu IA. Lo que no se probó dice "sin probar".
-
-**Claude Code (terminal).** Instala las habilidades, los siete comandos y la conexión a Empify declarada.
-
-```bash
-claude plugin marketplace add empify-ar/empify-ia && claude plugin install empify@empify
-```
-
-Dentro de Claude Code, los mismos dos pasos son `/plugin marketplace add empify-ar/empify-ia` y `/plugin install empify@empify`. Probado el 24 de noviembre de 2026 con el repositorio en una carpeta local; ese mismo comando con el nombre de GitHub todavía no se corrió desde acá.
-
-**claude.ai (web y escritorio).** Bajá los `.zip` de [`descargas/`](descargas/): uno por habilidad y `empify-habilidades-todas.zip`, que junta todas y sirve para descomprimir en una carpeta, no para subir de una vez. Empezá por `idea-de-ebook.zip`. En **Personalización** (en inglés, **Customize**) abrí **Skills**, tocá **+**, después **+ Create skill** y **Upload a skill**, y subí un `.zip` por vez. Pide tener activada la ejecución de código y creación de archivos (en Ajustes, Capacidades; en pantallas nuevas se llama **Create and edit files**). En Team y Enterprise, quien administra puede haber desactivado las habilidades propias. Pasos según la ayuda de Claude del 24 de noviembre de 2026; la subida de estos `.zip` en particular, sin probar.
-
-**Cursor.** Descomprimí `empify-habilidades-todas.zip` dentro de `~/.cursor/skills/` (para todos tus proyectos) o de `.cursor/skills/` (para uno). Sin probar.
-
-**ChatGPT y otras IA.** Pegá el bloque de [`otras-ia/instrucciones-empify.md`](otras-ia/instrucciones-empify.md) en las instrucciones personalizadas, o el texto de un `SKILL.md` en la conversación. Sin probar; en ChatGPT, además, conectar tu cuenta depende de tu plan (ver [Conectar tu cuenta](#conectar-tu-cuenta)).
-
 ## Qué querés, qué escribís, qué recibís
 
 Los siete comandos de Claude Code (con el complemento instalado llevan el prefijo `/empify:`).
@@ -82,7 +70,7 @@ Este repositorio tiene dos partes, las dos con licencia MIT.
 
 ### Parte 1: doce habilidades que andan sin cuenta
 
-No piden cuenta de Empify, ni conexión, ni ninguna herramienta: alcanza con lo que contás y con las preguntas que te hace tu IA. Sirven para cualquier ebook o producto digital de información, esté donde esté a la venta. Las leen tus IA como texto; no ejecutan código ni mandan datos a ningún lado.
+No piden cuenta de Empify, ni conexión, ni ninguna herramienta: alcanza con lo que contás y con las preguntas que te hace tu IA. Sirven para cualquier ebook o producto digital de información, esté donde esté a la venta. Tu IA las lee como texto; no ejecutan código ni mandan datos a ningún lado.
 
 | Habilidad | Para qué sirve |
 |---|---|
@@ -144,25 +132,13 @@ Detalle y ayuda oficial al día: https://empify.com.ar/conectar-ia
 4. Tocá **Conectar**. Se abre Empify: entrá con tu cuenta, mirá los permisos (por defecto, solo ver) y tocá **Aceptar y volver**. Si querés que además valide ideas y escriba textos de anuncio, tildá esa casilla antes.
 5. Abrí una conversación nueva y probá con un pedido de los de abajo. La primera vez Claude puede pedirte permiso para usar cada herramienta: podés permitirla una vez o siempre.
 
-Probado el 15 de noviembre de 2026 con Claude en español. Si tu Claude está en inglés, los menús son **Customize**, **Connectors**, **Add custom connector**, **Continue**, **Add** y **Connect**. En Team y Enterprise, la primera vez la agrega quien administra la cuenta. Agregarla desde el celular no está confirmado por Claude: hacelo desde la web o el escritorio, y después la usás también en la app.
+Probado con Claude en español. Si tu Claude está en inglés, los menús son **Customize**, **Connectors**, **Add custom connector**, **Continue**, **Add** y **Connect**. En Team y Enterprise, la primera vez la agrega quien administra la cuenta. Agregarla desde el celular no está confirmado por Claude: hacelo desde la web o el escritorio, y después la usás también en la app.
 
 **Claude Code.** Si instalaste el complemento, la conexión ya viene declarada: dentro de Claude Code escribí `/mcp`, elegí `empify` y seguí el navegador para entrar a tu cuenta. Sin el complemento:
 
 ```bash
 claude mcp add --transport http empify https://empify.com.ar/api/mcp
 ```
-
-**ChatGPT.** Agregar una conexión propia depende de tu plan y se hace desde la web (chatgpt.com), no desde el celular. Business, Enterprise y Edu: completo (en Business lo agrega una persona administradora). Pro: solo lectura; ves tus ebooks, ventas y visitas, pero no podés validar ideas ni armar textos de anuncio. Plus y gratis: puede variar o no estar disponible; la ayuda oficial de OpenAI no los confirma. Pasos: entrá a **Plugins** (chatgpt.com/plugins), tocá **+**, elegí **Add custom MCP server**, poné el nombre `Empify` y pegá `https://empify.com.ar/api/mcp`; en autenticación elegí **OAuth**, marcá que entendés y querés continuar, y elegí **Create as a plugin**. Revisá las herramientas, instalalo y entrá a Empify cuando te lo pida. En una conversación nueva, escribí `@` y elegí Empify. Si no ves **Add custom MCP server**, tu plan probablemente no la incluye. Sin probar de punta a punta.
-
-**Cursor.** En `~/.cursor/mcp.json` (o `.cursor/mcp.json` dentro de un proyecto) agregá lo siguiente; Cursor abre el navegador para que entres a Empify. Sin probar.
-
-```json
-{ "mcpServers": { "empify": { "url": "https://empify.com.ar/api/mcp" } } }
-```
-
-**VS Code con GitHub Copilot.** En la paleta de comandos ejecutá **Chat: Open Customizations**, abrí **MCP Servers** y tocá **Add Server**. Elegí **HTTP**, pegá la dirección, ponele el nombre `empify`, aceptá la confianza del servidor y entrá a tu cuenta. Si tu organización limita los servidores permitidos, puede estar bloqueado. Sin probar.
-
-**Gemini.** Hoy la aplicación de Gemini solo acepta conexiones personalizadas en Estados Unidos, en inglés y con una cuenta de Google personal, así que desde Argentina no hay un camino por ahí.
 
 **Ocho pedidos para probar la conexión**
 
@@ -174,6 +150,8 @@ claude mcp add --transport http empify https://empify.com.ar/api/mcp
 6. "Leé la página de venta de mi último ebook y decime qué mejorarías."
 7. "Hacé el repaso semanal de mi cuenta."
 8. "¿Qué ebooks míos todavía no tienen la tienda publicada?"
+
+Otras IA: solo lo probamos con Claude. Los pasos que da cada fabricante están en https://empify.com.ar/conectar-ia.
 
 ## Rutinas
 
@@ -192,19 +170,12 @@ Una rutina es un pedido que tu IA hace sola, en el día y la hora que elegís, y
 - **Dónde queda el resultado:** en la lista de tareas de tu IA. No te llega al celular ni al mail: tenés que entrar a mirarlo.
 - **Por qué 28 días y no un mes:** Empify corta la conexión cuando pasan 30 días sin usarla, y un mes puede durar 31.
 - **Un resguardo:** dejá prendida solo la conexión de Empify en la tarea. Lo explica `rutinas/LEEME.md`.
-- **Sin probar:** que estas rutinas corran solas con la conexión de Empify, sin nadie delante. Corrélas a mano antes de dejarlas solas, como indica la guía. Para ChatGPT, Cursor y VS Code no está confirmado que una tarea programada use la conexión, así que no se ofrecen.
 
 ## Con las herramientas que ya usás
 
-Si ya usás Canva, Gmail, Google Drive o el conector de anuncios de Meta, tu IA puede combinarlos con tu cuenta de Empify. Son cinco recetas posibles hoy: ninguna se probó en vivo, y todas dependen de que tengas esos conectores en tu IA. Cada conector es de su empresa, con sus propios planes y términos.
+Se combina con Canva, Gmail, Google Drive y el conector de anuncios de Meta.
 
-Regla común: pedí cada receta en una conversación, con vos mirando, y pedí de forma expresa que lleve datos de Empify a la otra herramienta, porque las habilidades no lo hacen por su cuenta. No las dejes en una tarea que corre sola con esas otras conexiones prendidas.
-
-1. **Piezas de venta en Canva a partir de la ficha del ebook.** Tu IA lee con `ver_ebook` el título, la bajada, los beneficios y la portada, y arma en Canva tres diseños (publicación, historia y banner). Límite: las plantillas de marca y el autocompletado de Canva piden un plan Pro o superior; en el plan gratis se genera un diseño nuevo sin plantilla.
-2. **Rendimiento de Meta cruzado con tus ventas de Empify.** Con el conector de anuncios de Meta en solo lectura, más `visitas_tienda` y `ventas`, tu IA arma una tabla por campaña con gasto, clics, visitantes y ventas cobradas, y el costo por venta real. Límite: el cruce solo funciona si el nombre de campaña del link coincide en los dos lados; las ventas sin origen quedan aparte. Ese conector también puede crear y editar anuncios: dejá esas acciones en "preguntar siempre" o bloqueadas. El origen de visitas y la versión completa de `visitas_tienda` son del plan Emprendedor en adelante.
-3. **El informe semanal como borrador de mail.** Pedile `/empify:semana` y que deje el resultado como borrador en Gmail, sin enviarlo.
-4. **Historial semanal en una planilla de Google Drive.** Pedile el informe y que agregue la fila de la semana a tu hoja de cálculo, con un comentario de qué cambió. Resuelve que la conexión de Empify no guarda historial.
-5. **Revisión de tu página de venta con una guía de copy ajena.** Con `ver_ebook` (el texto de la página) y `visitas_tienda` (la conversión), más una guía como [`marketing-skills`](#recomendados-de-otros-autores), tu IA propone tres cambios en el titular, la garantía o los beneficios, con tu conversión actual como línea de base. Límite: esa guía es genérica y está en inglés; quitá todo lo que sea urgencia que no existe.
+Las recetas están en [`RECOMENDADOS.md`](RECOMENDADOS.md#recetas-para-combinar).
 
 ## Recomendados de otros autores
 
@@ -237,7 +208,7 @@ Otras dos clases de recomendación no pueden ir en el catálogo: un servidor de 
 - Los cupos del plan se renuevan el primer día de cada mes (hora UTC). Los planes están en https://empify.com.ar/precios.
 - Una conexión sin uso durante 30 días se corta sola.
 
-Comprobado contra https://empify.com.ar/conectar-ia el 24 de noviembre de 2026.
+Fuente: https://empify.com.ar/conectar-ia y https://empify.com.ar/precios.
 
 ## Seguridad y privacidad
 
@@ -253,27 +224,23 @@ Comprobado contra https://empify.com.ar/conectar-ia el 24 de noviembre de 2026.
 
 Probado:
 
-- La conexión a tu cuenta con Claude, en español (15 de noviembre de 2026).
-- Que el complemento pasa `claude plugin validate` y que se instala desde una copia local junto con los cuatro recomendados (24 de noviembre de 2026).
+- La conexión con Claude, en español.
+- Que el complemento pasa el validador (`claude plugin validate`) y se instala junto con los cuatro recomendados.
 
-Sin probar:
+Todavía no:
 
-- El comando de instalación de dos pasos con el nombre de este repositorio en GitHub.
-- Una conversación completa de cada habilidad y de cada comando con una cuenta real: están escritos y revisados, pero el ejemplo de la demostración usa datos de muestra.
 - Las rutinas corriendo solas con la conexión de Empify.
-- La subida de los `.zip` a claude.ai, y todo lo de Cursor, VS Code y ChatGPT (instalación y conexión).
-- Las cinco recetas con otras herramientas.
-- Cualquier uso con una IA que no sea Claude.
+- La subida de los `.zip` a claude.ai.
 
 ## Preguntas frecuentes
 
-**¿Tiene costo extra?** No. La conexión no se cobra aparte. Validar una idea y armar textos de anuncio siguen las reglas de tu plan, como si lo hicieras desde Empify. Lo que cuesta tu IA (tu suscripción a Claude o a ChatGPT) es aparte.
+**¿Tiene costo extra?** No. La conexión no se cobra aparte. Validar una idea y armar textos de anuncio siguen las reglas de tu plan, como si lo hicieras desde Empify. Lo que cuesta tu IA (tu suscripción a Claude) es aparte.
 
 **¿Por qué dice 12 y no 19?** Doce habilidades sirven sin cuenta. Las otras siete usan tu cuenta de Empify, y están en la parte 2.
 
-**¿Necesito Empify para usar las doce?** No. Sirven para cualquier ebook, esté donde esté. Las que mencionan a Empify (sus comisiones, sus ofertas extra, su tienda) lo hacen en una sección aparte, "Con Empify", que es opcional.
+**¿Necesito Empify para usar las doce?** No. Sirven para cualquier ebook, esté donde esté. Las que mencionan a Empify (sus comisiones, sus ofertas extra, su tienda) lo hacen en una sección aparte, "Con Empify", que es opcional. El perfil del vendedor se guarda en un archivo que se llama `perfil-empify.md`, pero no necesita cuenta.
 
-**¿Funciona en el celular?** En Claude, una vez agregada la conexión desde la computadora, también la usás en la app. En ChatGPT la conexión se agrega solo desde la web.
+**¿Funciona en el celular?** En Claude, una vez agregada la conexión desde la computadora, también la usás en la app.
 
 **¿La IA puede publicar o cambiar mi tienda?** No. Puede leer y generar texto; lo demás lo hacés vos en tu panel.
 
@@ -284,8 +251,6 @@ Sin probar:
 **¿Las habilidades mandan mis datos a algún lado?** No. Son archivos de texto con instrucciones; no ejecutan código ni hacen llamadas por su cuenta. Los complementos recomendados de otros autores sí pueden traer código: leé su ficha antes de instalarlos.
 
 **¿Hacen vender?** No prometen ventas ni resultados. Te ayudan a ordenar el trabajo, a escribir mejor y a leer tus números con criterio.
-
-**¿Dónde está la habilidad de Meta Ads?** Salió de este repositorio en la versión 2.0.0. Para armar anuncios con este kit usá `angulos-de-anuncio-por-fecha`, `imagenes-de-venta` y `textos-de-anuncio-para-ebooks`.
 
 **¿Por qué no hay código del servidor?** Porque la conexión es remota, por dirección web. No hay nada que instalar ni ejecutar en tu computadora.
 
@@ -299,7 +264,7 @@ skills/             las 19 habilidades (una carpeta cada una)
 commands/           los siete comandos
 rutinas/            los cuatro textos de rutina y su guía
 descargas/          un .zip por habilidad y uno con todas
-otras-ia/           bloque de instrucciones para pegar en otras IA
+otras-ia/           bloque de texto con lo esencial, para pegar en tu IA
 scripts/            empaquetar.sh arma los .zip
 RECOMENDADOS.md     recomendaciones que no entran al catálogo
 CHANGELOG.md        qué cambió en cada versión

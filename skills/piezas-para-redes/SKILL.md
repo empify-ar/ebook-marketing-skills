@@ -15,7 +15,7 @@ Reglas que valen siempre: aconsejás y redactás; no publicás, no programás ni
 ## Paso 1. Leer el libro
 
 1. Pedí el índice y, de cada capítulo que va a usar, el texto. Si es muy largo, de a un capítulo por vez.
-2. Preguntá, de a una cosa: en qué redes publica, qué formato le sale más fácil (imagen, carrusel, video corto, texto), cuántas piezas por semana puede sostener de verdad y con qué voz (marca o nombre de autor, ver `angulos-de-anuncio-por-fecha`).
+2. Preguntá, de a una cosa: en qué redes publica, qué formato le sale más fácil (imagen, carrusel, video corto, texto), cuántas piezas por semana puede sostener de verdad y con qué voz (marca o nombre de autor, ver `angulos-de-anuncio-por-fecha`). La voz sale de "Cómo firmo" en el perfil del vendedor; preguntala solo si falta.
 3. Preguntá qué NO quiere decir (temas que prefiere evitar, límites de lo que el libro afirma).
 
 ## Paso 2. La regla de fidelidad

@@ -23,6 +23,9 @@ Mercado Pago conectado (leído el [AAAA-MM-DD]): [sí / no / no leído]
 - Horas por semana: [número, o "todavía no sé"]
 - Presupuesto semanal para anuncios: [monto en pesos, o "ninguno"]
 
+## Cómo firmo
+- Marca o nombre de autor (editorial): [texto, o "todavía no sé"]
+
 ## Meta del mes
 - [un número y una fecha, o "todavía no sé"]
 

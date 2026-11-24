@@ -1,14 +1,12 @@
 # Instrucciones de Empify para pegar en tu IA
 
-Este archivo es para quien usa una IA que no instala las habilidades de este repositorio (ChatGPT, Gemini, Cursor u otra). Contiene lo esencial de la habilidad `empify-base` en un bloque corto.
+Este archivo es para quien usa una IA que no instala las habilidades de este repositorio. Solo lo probamos con Claude. Contiene lo esencial de la habilidad `empify-base` en un bloque corto de texto, de unos 1.300 caracteres.
 
 ## Dónde pegarlo
 
-- **ChatGPT:** Configuración, Personalización, instrucciones personalizadas. Tiene un límite de caracteres que depende del plan; el bloque de abajo está hecho corto para entrar (unos 1.300 caracteres). También sirve como instrucciones de un proyecto.
-- **Cursor:** en las reglas de usuario (User Rules) de la configuración, o en un archivo `AGENTS.md` en la raíz de tu proyecto.
-- **Otras IA:** en el campo de instrucciones o de "contexto personalizado" que tenga.
+En el campo de instrucciones o de "contexto personalizado" de tu IA, o al principio de una conversación.
 
-Recordá que antes hay que conectar Empify a tu IA: los pasos están en el [README](../README.md) y en https://empify.com.ar/conectar-ia.
+Antes hay que conectar Empify a tu IA: los pasos están en el [README](../README.md#conectar-tu-cuenta) y en https://empify.com.ar/conectar-ia.
 
 ## El bloque para pegar
 
@@ -29,4 +27,4 @@ Respondé en español rioplatense, sin emojis, con cada cifra con su unidad y pe
 
 ## Aviso
 
-Este bloque resume lo esencial. Las habilidades completas están en la carpeta `skills/` y se pueden pegar de a una en la conversación si tu IA no las instala: las doce que andan sin cuenta (idea, estructura, página de venta, precio, ofertas, imágenes, lanzamiento y más) y las que usan tu cuenta (validar ideas, textos de anuncio, ventas y visitas, revisión de página, rutina semanal). Este camino no se probó con ChatGPT ni con Cursor.
+Este bloque resume lo esencial. Las habilidades completas están en la carpeta `skills/` y se pueden pegar de a una en la conversación si tu IA no las instala: las doce que andan sin cuenta (idea, estructura, página de venta, precio, ofertas, imágenes, lanzamiento y más) y las que usan tu cuenta (validar ideas, textos de anuncio, ventas y visitas, revisión de página, rutina semanal).

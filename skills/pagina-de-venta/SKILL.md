@@ -19,7 +19,7 @@ Reglas que valen siempre:
 
 ## Qué pedir antes de escribir
 
-Título e índice; la promesa de una frase (si no hay, `estructura-de-ebook`); para quién es y para quién no; precio en pesos y qué incluye; bonos ya hechos; garantía, si existe y quién la cumple; nombre del autor o de la marca; cómo recibe el archivo el comprador; una página de muestra; las dudas reales que le hicieron.
+Título e índice; la promesa de una frase (si no hay, `estructura-de-ebook`); para quién es y para quién no; precio en pesos y qué incluye; bonos ya hechos; garantía, si existe y quién la cumple; cómo firma (marca o nombre de autor: leelo de "Cómo firmo" en el perfil y preguntalo solo si falta); cómo recibe el archivo el comprador; una página de muestra; las dudas reales que le hicieron.
 
 ## La estructura, en orden
 
@@ -33,7 +33,7 @@ Título e índice; la promesa de una frase (si no hay, `estructura-de-ebook`); p
    - Floja: "Contenido exclusivo de altísimo valor."
    - Arreglo: "[N] capítulos, una plantilla para imprimir y una lista de compras." (Cada cantidad sale del índice real.)
 4. **Muestra del interior.** Una página completa a tamaño legible, el índice o un capítulo de muestra. Responde de frente a "¿qué estoy comprando?".
-5. **Quién lo hace.** Nombre y apellido o marca real, y una línea de por qué sabe del tema, con lo que sea cierto. Si los anuncios salen desde una página de anunciante, el nombre es el mismo que en la página de venta. Alternativa si no hay trayectoria que mostrar: contá el método y cómo se armó el libro.
+5. **Quién lo hace.** La marca o el nombre de autor con el que firmás (ver `angulos-de-anuncio-por-fecha`; si ya está en el perfil, no lo preguntes de nuevo), y una línea de cómo se armó el libro, con lo que sea cierto. Si los anuncios salen desde una página de anunciante, el nombre es el mismo que en la página de venta.
 6. **Precio y oferta.** Precio visible, en pesos, y qué incluye. El precio anterior solo si realmente existió. Para una fecha de cierre, ver `precio-y-oferta`.
 7. **Garantía.** Solo si existe y la persona la va a cumplir, con sus condiciones en una frase. Si no hay, no se escribe una: se explica cómo pedir ayuda.
 8. **Preguntas.** Las que de verdad aparecieron: cómo se recibe, en qué formato, si se imprime o se lee en el celular, qué pasa si algo falla. Respuestas verdaderas y cortas.

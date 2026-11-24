@@ -21,7 +21,9 @@ Formato: una versión por título, la más nueva arriba.
 **Qué cambia**
 
 - Licencia: todo el repositorio pasa a MIT, con copyright de Empify, y el campo `license` de las habilidades y de los dos manifiestos dice `MIT`. El nombre y el logo de Empify no quedan cubiertos. La licencia propia de las versiones 1.1.0 a 1.3.0 deja de regir para esta versión; quien se llevó una copia de esas versiones conserva la licencia con la que se la publicó.
-- El README se reescribe: doce habilidades que andan sin cuenta y siete que usan tu cuenta, instalación por cada IA, tabla de comandos, rutinas, recetas con otras herramientas y qué se probó y qué no.
+- El README se reescribe: doce habilidades que andan sin cuenta y siete que usan tu cuenta, instalación con Claude Code y con claude.ai, tabla de comandos, rutinas y qué se probó y qué no. Las recetas para combinar Empify con otras herramientas pasan a `RECOMENDADOS.md`.
+- El perfil del vendedor suma el campo "Cómo firmo" (marca o nombre de autor), que leen `angulos-de-anuncio-por-fecha`, `piezas-para-redes` y `pagina-de-venta` en lugar de preguntarlo de nuevo.
+- `escalera-de-ofertas` y `precio-y-oferta` usan una sola definición de "una sola vez": la tienda muestra la oferta una sola vez a cada comprador.
 - Los `.zip` de `descargas/` se regeneran, uno por habilidad y uno con todas, cada uno con el `LICENSE` nuevo adentro.
 - `ebook-visual` dice qué hace hoy Empify con un libro visual: se arma afuera, se sube como libro propio y se vende en la tienda.
 

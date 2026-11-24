@@ -25,7 +25,7 @@ Preguntá solo lo que falte:
 2. ¿Qué le cuesta al comprador no resolver el problema: tiempo, plata, enojo? Con sus palabras.
 3. Qué alternativas ve el comprador y a qué precio las ve publicadas (gratis y pagas), con enlace y fecha. Sin dato queda "sin dato".
 4. Cuánto trabajo y qué material tiene el ebook: páginas visuales, plantillas, ejemplos.
-5. Dónde va a cobrar, en qué moneda y cuáles son sus costos por venta (ver paso 6). Para impuestos, que consulte a su contador qué le corresponde.
+5. Dónde va a cobrar, en qué moneda y cuáles son sus costos por venta (ver paso 6). Para impuestos, que consulte con quien le lleva la parte impositiva qué le corresponde.
 
 ## Paso 2. El precio
 
@@ -53,7 +53,7 @@ Hay tres formas reales:
 2. **Bono por tiempo limitado** que ella deja de entregar en una fecha concreta.
 3. **Cupo real**, solo si el ebook incluye algo que atiende personalmente, como una revisión o una consulta: el cupo es lo que realmente puede atender.
 
-Una oferta "de una sola vez" se puede escribir si de verdad sale y no vuelve. Preguntale: "¿la vas a sacar? ¿y si dentro de un mes querés volver a ponerla?". Si hay duda, escribí "Precio de lanzamiento hasta el [fecha real]". Una cuenta regresiva que se reinicia al recargar es una fecha inventada. Y la urgencia no castiga: no escribas frases que hagan sentir culpa a quien decide no comprar. Poné la fecha de cierre en su calendario para cambiar el precio ese día.
+Una oferta "de una sola vez" se puede escribir si la tienda la muestra una sola vez a cada comprador (ver `escalera-de-ofertas`). Si no lo podés comprobar, escribí "Precio de lanzamiento hasta el [fecha real]". Y la urgencia no castiga: no escribas frases que hagan sentir culpa a quien decide no comprar. Poné la fecha de cierre en su calendario para cambiar el precio ese día.
 
 ## Paso 6. La cuenta por venta
 

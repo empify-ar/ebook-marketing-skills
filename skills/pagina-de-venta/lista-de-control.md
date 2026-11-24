@@ -29,7 +29,7 @@ Marcá cada punto: está, mejorable o falta. Donde no está, escribí el texto n
 
 ## 5. Quién lo hace
 
-- [ ] Nombre del autor o marca real, con una línea de por qué sabe.
+- [ ] Marca o nombre de autor editorial, con una línea de cómo se armó el libro (sin credenciales ni historia de vida inventadas).
 - [ ] Un medio de contacto real.
 - [ ] Coincide con el nombre de la página desde la que salen los anuncios.
 
@@ -38,7 +38,7 @@ Marcá cada punto: está, mejorable o falta. Donde no está, escribí el texto n
 - [ ] Precio visible, en pesos, con lo que incluye.
 - [ ] El precio anterior, si aparece, fue un precio real.
 - [ ] Si hay fecha de cierre, es una fecha que se va a cumplir (ver `precio-y-oferta`).
-- [ ] No hay cupos, contadores ni "últimas unidades" que no existan.
+- [ ] No hay cupos ni "últimas unidades" que no existan.
 
 ## 7. Garantía
 

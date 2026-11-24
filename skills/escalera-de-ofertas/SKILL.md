@@ -53,7 +53,7 @@ Los textos modelo de cada peldaño están en [textos-modelo.md](textos-modelo.md
 | Cuenta un cupo que la persona fijó | El cupo real y cuántos quedan, según la tienda. |
 | No se puede comprobar | "Sumalo a tu pedido." + el beneficio. Sin urgencia. |
 
-Lo único que no se escribe: una fecha, un cupo, un "quedan N" o un testimonio que no existen, ni cuentas regresivas que se reinician. La alternativa logra el mismo efecto con algo cierto: "una sola vez", el precio por llevarlo junto con el libro o una fecha real de cierre, dicho en una línea y sin castigar a quien decide no comprar.
+Lo único que no se escribe: una fecha, un cupo, un "quedan N" o un testimonio que no existen. La alternativa logra el mismo efecto con algo cierto: "una sola vez", el precio por llevarlo junto con el libro o una fecha real de cierre, dicho en una línea y sin castigar a quien decide no comprar.
 
 Antes de entregar, anotá junto a cada frase de urgencia: "Verificado por la persona: sí / no, porque la tienda [explicación]". Lo que quedó en "no" sale del texto.
 
@@ -86,3 +86,5 @@ Si la persona tiene la conexión de Empify, sin costo de cupo:
 - `ventas` y `visitas_tienda` (con `libro_id`): mirar cómo se mueve cada ebook antes y después de cambiar algo. El detalle de montos y origen depende del plan (`mi_cuenta`).
 
 La conexión no crea ni cambia ofertas. Las configura la persona en su panel; confirmá ahí cómo se muestra cada una, porque ninguna herramienta informa si una oferta aparece una sola vez.
+
+En la tienda de Empify, antes de escribir "una sola vez" hacé una compra de prueba y mirá qué ve tu comprador después de rechazar la oferta. Si la oferta vuelve a aparecer, escribí "Oferta solo para compradores" y el precio.

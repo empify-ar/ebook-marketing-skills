@@ -26,7 +26,7 @@ Si hay conexión con Empify, llamá `mi_cuenta` (una vez) y `listar_ebooks`, y p
 
 Sin conexión o sin cuenta, no insistas: marcá "Cuenta de Empify: no" y seguí. El perfil sirve igual.
 
-## Paso 3. Preguntar lo que falta (máximo cinco preguntas, una por vez)
+## Paso 3. Preguntar lo que falta (máximo seis preguntas, una por vez)
 
 Aceptá "todavía no sé" como respuesta válida: se anota así y no se vuelve a preguntar en esa conversación.
 
@@ -35,6 +35,7 @@ Aceptá "todavía no sé" como respuesta válida: se anota así y no se vuelve a
 3. Ebooks: con cuenta, solo confirmá la lista que leíste y preguntá cuál es el principal; sin cuenta, "¿qué ebooks tenés o pensás hacer?" (nombre y precio en pesos si ya lo definió).
 4. Canales: "¿Dónde mostrás tus ebooks hoy (Instagram, TikTok, WhatsApp, anuncios, otro) y cuántas horas por semana le dedicás?". Presupuesto para anuncios: opcional, y "ninguno" es una respuesta buena.
 5. Meta del mes: "¿Qué te gustaría lograr este mes? Un número y una fecha, por ejemplo '10 ventas antes del 30'". Si no tiene meta, anotá "todavía no sé" y no le inventes una.
+6. Cómo firmo: "¿Con qué marca o nombre de autor firmás tus ebooks y tus anuncios?". Puede ser el de la marca o un nombre de autor editorial (ver `angulos-de-anuncio-por-fecha`). "Todavía no sé" vale; no le inventes uno.
 
 No preguntes nada que ya sepas por la conexión. No pidas datos personales ni de compradores.
 
@@ -57,6 +58,7 @@ Las habilidades y comandos del kit leen el perfil antes de preguntar. Lo que les
 | Rubro y público | elegir ángulos y vocabulario; no preguntar el público de nuevo |
 | Mis ebooks | saber cuál es el principal sin pedir el título otra vez |
 | Canales y tiempo | no recomendar lo que no tiene tiempo de hacer |
+| Cómo firmo | página de anuncios, página de venta, redes: con qué nombre se firma, sin volver a preguntarlo |
 | Meta del mes | decidir qué acción pesa más (`proximo-paso`) |
 | Lo que ya probé | no repetir ángulos o canales que no funcionaron |
 | Historial semanal | la comparación con la semana anterior (`semana`) |

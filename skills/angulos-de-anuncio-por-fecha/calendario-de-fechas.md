@@ -8,7 +8,7 @@ Revisado el 24-11-2026 contra fuentes públicas (al final). La columna "Estado" 
 |---|---|---|---|
 | Vuelta a clases | Cada provincia fija su calendario; el Consejo Federal de Educación puso un piso de 190 días de clase para 2027 | Ciudad de Buenos Aires (inicial y primaria) y Córdoba: lunes 1 de marzo de 2027 | Comprobada en esas dos; el resto, **verificá** |
 | Vacaciones de invierno | Dos semanas de julio, según la provincia | Ciudad de Buenos Aires: 19 al 30 de julio. Córdoba: 12 al 23 de julio | Comprobada en esas dos; el resto, **verificá** |
-| Día de las Infancias (antes Día del Niño) | Tercer domingo de agosto (el Decreto 562/2025 lo pasó del segundo al tercero) | domingo 15 de agosto | Comprobada |
+| Día de las Infancias (antes Día del Niño) | Tercer domingo de agosto | domingo 15 de agosto | Comprobada |
 | Día del Padre | Tercer domingo de junio | domingo 20 de junio | Comprobada |
 | Día de la Madre | Tercer domingo de octubre | domingo 17 de octubre | Comprobada |
 | Día del Maestro | 11 de septiembre | sábado 11 de septiembre | **verificá** |

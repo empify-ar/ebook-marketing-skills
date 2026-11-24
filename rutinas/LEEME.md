@@ -14,12 +14,12 @@ Una rutina es un pedido que tu IA hace sola, en un día y una hora que elegís, 
 - Es una IA que lee tu cuenta de Empify y escribe texto: informes, avisos y borradores.
 - No es automático al cien por ciento. Ninguna rutina publica, cambia precios, crea ebooks ni sube anuncios, y tampoco paga nada. Los cambios los hacés vos en tu panel de Empify, y los anuncios los cargás vos en Meta u otra plataforma.
 - No promete ventas ni resultados.
-- Importante: todavía no probamos estas rutinas corriendo solas con la conexión de Empify. Sabemos que tu IA puede usar la conexión en una conversación y que las tareas programadas de Claude pueden usar conectores, pero la combinación de las dos corriendo sin nadie delante no la comprobamos. Por eso, en el paso 6 la corrés a mano antes de dejarla sola.
+- Importante: todavía no probamos estas rutinas corriendo solas con la conexión de Empify. Sabemos que tu IA puede usar la conexión en una conversación y que las tareas programadas de Claude pueden usar conectores, pero la combinación de las dos corriendo sin nadie delante no la comprobamos. Por eso, en el paso 6 la corrés a mano antes de dejarla sola, y revisás el resultado contra tu panel de Empify.
 
 ## Antes de empezar
 
 1. Tené Empify conectado a tu IA y comprobá que anda. Si no estás segura o seguro, corré el comando `/empify:doctor`. (El prefijo `empify` es el nombre con el que está instalado el complemento; si lo instalaste con otro nombre, es ese.)
-2. Necesitás un plan pago de Claude (Pro, Max, Ultra, Team o Enterprise): las tareas programadas no están en el plan gratis. Esta guía cubre solo Claude. Para ChatGPT y otras IA no podemos confirmar que una tarea programada use la conexión de Empify, así que no las ofrecemos.
+2. Necesitás un plan pago de Claude (Pro, Max, Ultra, Team o Enterprise): las tareas programadas no están en el plan gratis. Esta guía cubre solo Claude.
 3. Elegí una rutina de la tabla de arriba. Si es la primera vez, empezá por `informe-semanal.md`.
 4. Si usás la tanda de anuncios, al conectar Empify tildá el permiso de "crear". Para las otras tres, alcanza con "ver".
 
