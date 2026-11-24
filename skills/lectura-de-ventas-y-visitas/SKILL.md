@@ -1,10 +1,12 @@
 ---
 name: lectura-de-ventas-y-visitas
 description: "Diagnostica ventas y visitas de las tiendas de Empify: si el problema es tráfico o conversión, qué canal rinde y qué hacer esta semana. Usala ante preguntas como cuánto vendí o por qué no vendo."
-license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
+license: MIT
 ---
 
 # Lectura de ventas y visitas
+
+Antes de preguntar, leé el perfil del vendedor si existe (`perfil-empify.md` o el bloque pegado; ver `perfil-del-vendedor`) y no repitas lo que ya dice.
 
 Objetivo: responder con honestidad si el problema de una tienda es que llega poca gente o que la gente que llega no compra, y cerrar con tres acciones concretas. Sin humo: con pocos datos, lo correcto es decir "todavía no se puede saber".
 

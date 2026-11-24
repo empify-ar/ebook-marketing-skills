@@ -29,4 +29,4 @@ Respondé en español rioplatense, sin emojis, con cada cifra con su unidad y pe
 
 ## Aviso
 
-Este bloque resume lo esencial. Las habilidades completas (validar ideas, anuncios, ventas y visitas, página de venta, rutina semanal) están en la carpeta `skills/` y se pueden pegar de a una en la conversación si tu IA no las instala.
+Este bloque resume lo esencial. Las habilidades completas están en la carpeta `skills/` y se pueden pegar de a una en la conversación si tu IA no las instala: las doce que andan sin cuenta (idea, estructura, página de venta, precio, ofertas, imágenes, lanzamiento y más) y las que usan tu cuenta (validar ideas, textos de anuncio, ventas y visitas, revisión de página, rutina semanal). Este camino no se probó con ChatGPT ni con Cursor.

@@ -1,10 +1,12 @@
 ---
 name: empify-base
 description: "Contexto de Empify y de sus 7 herramientas conectadas: cuál usar, permisos, cupos y seguridad. Usala siempre que la persona hable de su cuenta, sus ebooks, ventas o tienda de Empify."
-license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
+license: MIT
 ---
 
 # Empify: contexto y reglas de uso
+
+Antes de preguntar, leé el perfil del vendedor si existe (`perfil-empify.md` o el bloque pegado; ver `perfil-del-vendedor`) y no repitas lo que ya dice.
 
 Empify es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. Esta conexión te da acceso a la cuenta de UNA persona (la que la autorizó) y a nada más. Todo lo que hagas es en su nombre: tratala con cuidado.
 

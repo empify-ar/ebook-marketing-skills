@@ -1,10 +1,12 @@
 ---
 name: revision-de-pagina-de-venta
 description: "Revisa la página de venta de un ebook de Empify como lo haría un comprador y devuelve textos listos para pegar en el panel. Usala cuando la tienda recibe visitas pero casi no vende."
-license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
+license: MIT
 ---
 
 # Revisión de la página de venta de un ebook
+
+Antes de preguntar, leé el perfil del vendedor si existe (`perfil-empify.md` o el bloque pegado; ver `perfil-del-vendedor`) y no repitas lo que ya dice.
 
 Objetivo: leer la página como una persona que nunca vio el ebook, detectar qué le impide decidir y devolver textos mejorados que el vendedor pega en su panel de Empify. Esta conexión no puede editar la página: el cambio lo hace el vendedor.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Arma los .zip de las habilidades de Empify con la estructura que pide claude.ai:
+# Arma los .zip de las habilidades de Empify (licencia MIT) con la estructura que pide claude.ai:
 # cada zip tiene la carpeta de la habilidad como raíz (nombre-de-la-habilidad/SKILL.md).
 # Uso: scripts/empaquetar.sh            -> escribe en descargas/
 #      SALIDA=/otra/carpeta scripts/empaquetar.sh
@@ -8,7 +8,7 @@ set -euo pipefail
 
 RAIZ="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SALIDA="${SALIDA:-$RAIZ/descargas}"
-FECHA_FIJA="202611150000"
+FECHA_FIJA="202611240000"
 TODAS="empify-habilidades-todas"
 
 command -v zip >/dev/null || { echo "Falta el comando zip." >&2; exit 1; }
@@ -20,7 +20,7 @@ trap 'rm -rf "$TMP"' EXIT
 
 # Valida el encabezado de una habilidad: name igual a la carpeta, solo minúsculas, números y guiones,
 # hasta 64 caracteres, sin las palabras reservadas; description entre 1 y 200 caracteres, sin < ni >;
-# license (opcional, es parte de la especificación de habilidades) de hasta 200 caracteres.
+# license (opcional, es parte de la especificación de habilidades; en este repositorio es MIT) de hasta 200 caracteres.
 validar() {
   local carpeta="$1" nombre
   nombre="$(basename "$carpeta")"
@@ -55,7 +55,7 @@ empaquetar() {  # empaquetar <zip> <carpeta-de-habilidad>...
   local etapa; etapa="$(mktemp -d "$TMP/e.XXXX")"
   for c in "$@"; do
     cp -R "$c" "$etapa/"
-    cp "$RAIZ/LICENSE" "$etapa/$(basename "$c")/LICENSE"   # la licencia viaja dentro de cada habilidad
+    cp "$RAIZ/LICENSE" "$etapa/$(basename "$c")/LICENSE"   # el texto MIT viaja dentro de cada habilidad
   done
   find "$etapa" -exec touch -t "$FECHA_FIJA" {} +
   ( cd "$etapa" && find . -type f ! -name .DS_Store | LC_ALL=C sort | sed 's#^\./##' | zip -X -D -q "$zipf" -@ )

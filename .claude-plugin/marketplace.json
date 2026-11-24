@@ -1,6 +1,6 @@
 {
   "name": "empify",
-  "description": "Habilidades y conexión de Empify para vendedores de ebooks.",
+  "description": "Habilidades de Empify para vender ebooks y una lista corta de complementos de otros autores que le sirven a quien vende.",
   "owner": {
     "name": "Empify",
     "url": "https://empify.com.ar"
@@ -9,11 +9,94 @@
     {
       "name": "empify",
       "source": "./",
-      "description": "Conexión a tu cuenta de Empify y siete habilidades para vender mejor tus ebooks.",
-      "version": "1.3.0",
-      "author": { "name": "Empify" },
+      "description": "Doce habilidades abiertas para vender un ebook, que andan sin cuenta, y la conexión a tu cuenta de Empify con siete habilidades, siete comandos y cuatro rutinas.",
+      "version": "2.0.0",
+      "author": {
+        "name": "Empify"
+      },
       "homepage": "https://empify.com.ar/conectar-ia",
-      "license": "SEE LICENSE IN LICENSE"
+      "license": "MIT",
+      "tags": [
+        "ebooks",
+        "ventas",
+        "español"
+      ]
+    },
+    {
+      "name": "marketing-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "sha": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9"
+      },
+      "description": "De otro autor, no de Empify. Habilidades de marketing en inglés: textos de venta, optimización de páginas, secuencias de mails y lanzamientos. Pensadas para SaaS: usá las que le sirvan a un ebook.",
+      "author": {
+        "name": "coreyhaines31"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills",
+      "license": "MIT",
+      "tags": [
+        "recomendado",
+        "tercero",
+        "marketing"
+      ]
+    },
+    {
+      "name": "claude-seo",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AgriciDaniel/claude-seo.git",
+        "sha": "468ed5b0d9e3249394783710e54abb02837e326b"
+      },
+      "description": "De otro autor, no de Empify. Revisa una página para buscadores y para que las IA puedan citarla. Trae scripts y un gancho que corre código en tu computadora: leelo antes de instalar. Sirve si tu ebook se vende en un dominio propio.",
+      "author": {
+        "name": "AgriciDaniel"
+      },
+      "homepage": "https://github.com/AgriciDaniel/claude-seo",
+      "license": "MIT",
+      "tags": [
+        "recomendado",
+        "tercero",
+        "seo"
+      ]
+    },
+    {
+      "name": "claude-ads",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AgriciDaniel/claude-ads.git",
+        "sha": "fc3908e786c318776df89a3a098333da377364be"
+      },
+      "description": "De otro autor, no de Empify. Auditoría de cuentas de anuncios (Meta y otras), cuentas de punto de equilibrio y diseño de pruebas. Puede proponer cambios en la cuenta de anuncios: dejalo en solo lectura. Está en inglés.",
+      "author": {
+        "name": "AgriciDaniel"
+      },
+      "homepage": "https://github.com/AgriciDaniel/claude-ads",
+      "license": "MIT",
+      "tags": [
+        "recomendado",
+        "tercero",
+        "anuncios"
+      ]
+    },
+    {
+      "name": "resend",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/resend/resend-skills.git",
+        "sha": "063246e39987faebc2608f968ca13a02d994a0d4"
+      },
+      "description": "De otro autor, no de Empify. Redacción y envío de mails con Resend. Pide una cuenta de Resend, un dominio y entrar con OAuth. Empify no entrega la lista de compradores, así que sirve solo si ya tenés tu propia lista.",
+      "author": {
+        "name": "resend"
+      },
+      "homepage": "https://resend.com",
+      "license": "MIT",
+      "tags": [
+        "recomendado",
+        "tercero",
+        "mails"
+      ]
     }
   ]
 }

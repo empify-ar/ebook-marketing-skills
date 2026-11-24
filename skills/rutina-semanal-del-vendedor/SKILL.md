@@ -1,10 +1,12 @@
 ---
 name: rutina-semanal-del-vendedor
 description: "Repaso de 10 minutos de la cuenta de Empify: plan y cupos, ebooks, ventas y visitas, y qué decidir. Usala cuando la persona pida un resumen semanal o no sepa por dónde empezar."
-license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
+license: MIT
 ---
 
 # Rutina semanal del vendedor (10 minutos)
+
+Antes de preguntar, leé el perfil del vendedor si existe (`perfil-empify.md` o el bloque pegado; ver `perfil-del-vendedor`) y no repitas lo que ya dice.
 
 Objetivo: que una vez por semana la persona sepa en diez minutos cómo está su cuenta, anote tres datos y salga con UNA decisión. Es un repaso de lectura: no gasta cupo ni cambia nada.
 
@@ -35,7 +37,7 @@ Revisá `ebooks[]`:
 
 1. `ventas` del período (si viene `periodo_legible`, usalo para nombrarlo; con cero ventas, `pista` dice por qué). Anotá `cantidad` de pesos y de dólares por separado. Si es versión completa, sumá `bruto` y, en dólares, `tu_parte_estimada`. Nunca sumes pesos con dólares.
 2. `visitas_tienda` del mismo período: visitantes, `conversion_pct`, y el canal que más trae y el que más vende.
-3. Compará con la semana anterior solo si la persona te dio el dato; esta conexión no guarda historial. Si no lo tiene, empezá hoy la planilla (ver [planilla-semanal.md](planilla-semanal.md)) para que la próxima semana sí compare.
+3. Compará con la semana anterior solo si la persona te dio el dato o si su perfil (`perfil-del-vendedor`) trae la última fila del "Historial semanal"; esta conexión no guarda historial. Si no lo tiene, empezá hoy la planilla (ver [planilla-semanal.md](planilla-semanal.md)) para que la próxima semana sí compare.
 4. Si la muestra es chica (pocos visitantes o pocas ventas), decilo y no interpretes: solo registrá el número.
 
 ## Minutos 8 a 9. Qué anotar

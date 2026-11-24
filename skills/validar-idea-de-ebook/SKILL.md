@@ -1,10 +1,12 @@
 ---
 name: validar-idea-de-ebook
 description: "Valida una idea de ebook antes de escribirlo: afina la idea con preguntas, usa validar_idea y cierra con avanzar, ajustar o descartar. Usala cuando alguien duda si un tema se va a vender."
-license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
+license: MIT
 ---
 
 # Validar una idea de ebook
+
+Antes de preguntar, leé el perfil del vendedor si existe (`perfil-empify.md` o el bloque pegado; ver `perfil-del-vendedor`) y no repitas lo que ya dice.
 
 Objetivo: que la persona decida con criterio si vale la pena escribir un ebook, gastando una sola validación bien armada en lugar de varias a ciegas. Una idea vaga da un resultado vago.
 
