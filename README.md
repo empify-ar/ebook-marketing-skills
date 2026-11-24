@@ -86,7 +86,7 @@ Una habilidad es una carpeta con instrucciones que tu IA carga sola cuando hace 
 ### Claude Code: el plugin (dos comandos)
 
 ```text
-/plugin marketplace add gaboplayt24-art/empify-ia
+/plugin marketplace add empify-ar/empify-ia
 /plugin install empify@empify
 ```
 
