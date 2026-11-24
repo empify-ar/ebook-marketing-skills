@@ -22,9 +22,9 @@ Cómo programarlo, según lo que permita tu IA (las opciones comunes son por hor
 
 | Producto | Funciona | Qué pide |
 |---|---|---|
-| Claude (web, escritorio, Cowork): tareas programadas | Según la documentación de Claude | Plan pago de Claude, Empify conectado como conector y, al conectar, el permiso de "crear" tildado |
-| Claude Code en la nube | Según la documentación de Claude: intervalo mínimo de una hora; la hora en cron va en UTC | Plan pago de Claude; Empify agregado como conector en tu cuenta de claude.ai con el permiso de "crear" |
-| Claude Code en el escritorio (local) | Según la documentación de Claude: solo con la app abierta y la compu despierta | Plan pago de Claude |
+| Claude (web, escritorio, Cowork): tareas programadas | Sí, según la documentación de Claude | Plan pago de Claude, Empify conectado como conector y, al conectar, el permiso de "crear" tildado |
+| Claude Code en la nube | Sí, según la documentación de Claude: intervalo mínimo de una hora; la hora en cron va en UTC | Plan pago de Claude; Empify agregado como conector en tu cuenta de claude.ai con el permiso de "crear" |
+| Claude Code en el escritorio (local) | Sí, según la documentación de Claude: solo con la app abierta y la compu despierta | Plan pago de Claude |
 
 Plan de Empify: Emprendedor o superior. La herramienta `textos_de_anuncio` empieza en ese plan; en Borrador y Editor la tarea lo dice y termina, sin escribir ganchos propios.
 

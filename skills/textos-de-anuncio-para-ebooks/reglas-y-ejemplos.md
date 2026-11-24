@@ -47,7 +47,7 @@ Bien (concreto, un beneficio, sin promesa):
 - [ ] Cada pieza tiene un solo mensaje.
 - [ ] El gancho se entiende solo.
 - [ ] Ninguna cifra, reseña o resultado sale de la nada.
-- [ ] No hay antes y después, ni promesas de ingresos o de plazos.
+- [ ] No hay antes y después inventados, ni promesas de ingresos o de plazos.
 - [ ] No se le habla a una condición personal de quien lo ve.
 - [ ] El llamado a la acción es un verbo y un destino.
 - [ ] Las variantes se diferencian en una sola cosa.

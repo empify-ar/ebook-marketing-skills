@@ -1,6 +1,6 @@
 # 12 skills to sell your ebook with AI. They work with no account.
 
-**And if you connect your Empify account, your AI can read your sales and visits and write you the week's decision. You make the changes.**
+**And if you connect your [Empify](https://empify.com.ar) account, an Argentine platform for creating and selling ebooks, your AI can read your sales and visits and write you the week's decision. You make the changes.**
 
 Open source (MIT) · in Spanish (Argentina) · no account needed to start · tested with Claude · [Español](README.md)
 
@@ -39,7 +39,7 @@ What I could not see: ad spend and results on Meta; this connection cannot see t
 
 ## What this is
 
-[Empify](https://empify.com.ar) is an Argentine platform for creating ebooks with AI and selling them from your own store. The skills are written in Spanish, for sellers in Argentina and Latin America. If you read Spanish you can use them as they are; they are plain text files, and we only tested them with Claude.
+[Empify](https://empify.com.ar) is an Argentine platform for creating ebooks with AI and selling them from your own store. The skills are written in Spanish, for sellers in Argentina and Latin America. If you read Spanish you can use them as they are; they are plain text files.
 
 ## What you want, what you type, what you get
 

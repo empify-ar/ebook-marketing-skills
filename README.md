@@ -1,6 +1,6 @@
 # 12 habilidades para vender tu ebook con IA. Andan sin cuenta.
 
-**Y si conectás tu cuenta de Empify, tu IA puede leer tus ventas y tus visitas y escribirte la decisión de la semana. Los cambios los hacés vos.**
+**Y si conectás tu cuenta de [Empify](https://empify.com.ar), una plataforma argentina para crear ebooks y venderlos, tu IA puede leer tus ventas y tus visitas y escribirte la decisión de la semana. Los cambios los hacés vos.**
 
 Abierto (licencia MIT) · en español · sin cuenta para empezar · probado con Claude · [English](README.en.md)
 
@@ -151,7 +151,7 @@ claude mcp add --transport http empify https://empify.com.ar/api/mcp
 7. "Hacé el repaso semanal de mi cuenta."
 8. "¿Qué ebooks míos todavía no tienen la tienda publicada?"
 
-Otras IA: solo lo probamos con Claude. Los pasos que da cada fabricante están en https://empify.com.ar/conectar-ia.
+Otras IA: solo lo probamos con Claude. Los pasos que da cada fabricante están en https://empify.com.ar/conectar-ia, y hay un bloque de instrucciones para pegar en [`otras-ia/`](otras-ia/instrucciones-empify.md).
 
 ## Rutinas
 
@@ -173,7 +173,7 @@ Una rutina es un pedido que tu IA hace sola, en el día y la hora que elegís, y
 
 ## Con las herramientas que ya usás
 
-Se combina con Canva, Gmail, Google Drive y el conector de anuncios de Meta.
+Hay cinco recetas para combinar tu cuenta de Empify con Canva, Gmail, Google Drive y el conector de anuncios de Meta.
 
 Las recetas están en [`RECOMENDADOS.md`](RECOMENDADOS.md#recetas-para-combinar).
 
@@ -238,7 +238,7 @@ Todavía no:
 
 **¿Por qué dice 12 y no 19?** Doce habilidades sirven sin cuenta. Las otras siete usan tu cuenta de Empify, y están en la parte 2.
 
-**¿Necesito Empify para usar las doce?** No. Sirven para cualquier ebook, esté donde esté. Las que mencionan a Empify (sus comisiones, sus ofertas extra, su tienda) lo hacen en una sección aparte, "Con Empify", que es opcional. El perfil del vendedor se guarda en un archivo que se llama `perfil-empify.md`, pero no necesita cuenta.
+**¿Necesito Empify para usar las doce?** No. Sirven para cualquier ebook, esté donde esté. Las que mencionan a Empify (sus comisiones, sus ofertas extra, su tienda) lo hacen en una sección aparte, "Con Empify", que es opcional. `perfil-del-vendedor` y `proximo-paso` nombran a Empify en sus pasos (el perfil se guarda en un archivo que se llama `perfil-empify.md`), pero las dos andan sin cuenta.
 
 **¿Funciona en el celular?** En Claude, una vez agregada la conexión desde la computadora, también la usás en la app.
 

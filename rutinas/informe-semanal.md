@@ -14,9 +14,9 @@ Una vez por semana, los lunes a media mañana (por ejemplo, lunes 9:07). Una sem
 
 | Producto | Funciona | Qué pide |
 |---|---|---|
-| Claude (web, escritorio, Cowork): tareas programadas | Según la documentación de Claude: corre aunque tu compu esté apagada, salvo que elijas una carpeta (ahí corre solo con la compu prendida y la app abierta) | Un plan pago de Claude (Pro, Max, Ultra, Team o Enterprise) y Empify conectado como conector |
-| Claude Code en la nube (tareas programadas) | Según la documentación de Claude: mínimo una vez por hora | Plan pago de Claude; Empify agregado como conector en tu cuenta de claude.ai (el que viene dentro del complemento no alcanza para la nube) |
-| Claude Code en el escritorio (tareas locales) | Según la documentación de Claude: solo con la app abierta y la compu despierta | Plan pago de Claude |
+| Claude (web, escritorio, Cowork): tareas programadas | Sí, según la documentación de Claude: corre aunque tu compu esté apagada, salvo que elijas una carpeta (ahí corre solo con la compu prendida y la app abierta) | Un plan pago de Claude (Pro, Max, Ultra, Team o Enterprise) y Empify conectado como conector |
+| Claude Code en la nube (tareas programadas) | Sí, según la documentación de Claude: mínimo una vez por hora | Plan pago de Claude; Empify agregado como conector en tu cuenta de claude.ai (el que viene dentro del complemento no alcanza para la nube) |
+| Claude Code en el escritorio (tareas locales) | Sí, según la documentación de Claude: solo con la app abierta y la compu despierta | Plan pago de Claude |
 
 Plan de Empify: sirve cualquiera. Con Borrador y Editor, `ventas` y `visitas_tienda` vienen en versión básica (solo cantidades, sin montos ni desglose) y el informe lo dice; con Emprendedor e Imperio vienen completas.
 

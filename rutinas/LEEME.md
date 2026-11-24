@@ -61,7 +61,7 @@ En la configuración del conector de Empify, las herramientas de lectura (`mi_cu
 ### 5. Elegí bien el horario
 
 - Poné unos minutos pasados de la hora (9:07 en vez de 9:00): los pedidos justo en punto pueden demorarse.
-- Las tareas de Claude corren en la nube: tu compu puede estar apagada (salvo que hayas elegido una carpeta, como se explica arriba).
+- Según la documentación de Claude, sus tareas programadas corren en la nube: tu compu puede estar apagada (salvo que hayas elegido una carpeta, como se explica arriba).
 
 ### 6. Correla una vez a mano
 

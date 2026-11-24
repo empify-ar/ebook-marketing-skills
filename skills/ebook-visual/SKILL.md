@@ -83,6 +83,6 @@ Dicho sin vueltas: Empify no arma por vos un libro de este tipo. No genera dibuj
 
 1. Armá el libro en una herramienta de diseño (Canva, Procreate, InDesign u otra) con los pasos de arriba y exportalo a PDF.
 2. Subilo a Empify como libro propio. Se acepta PDF o EPUB, de hasta 50 MB y sin contraseña. Al subirlo declarás que sos su autor o que tenés los derechos para venderlo. Publicarlo en la tienda pide un plan pago (Editor o superior).
-3. Vendelo en la tienda de Empify, que le suma: la portada de tu libro, una vista de adentro con hasta cuatro páginas reales de tu PDF (las preparás vos en el panel) y las ofertas extra (según tu plan): oferta al pagar, oferta después de la compra y segunda oportunidad; ver `escalera-de-ofertas`.
+3. Vendelo en la tienda de Empify, que le suma la portada de tu libro, una vista de adentro con hasta cuatro páginas reales de tu PDF (las preparás vos en el panel) y las ofertas extra, según tu plan: oferta al pagar, oferta después de la compra y segunda oportunidad (ver `escalera-de-ofertas`).
 
 Lo que ves en cada tienda depende de tu plan y de lo que Empify tenga activo cuando la armes: comprobalo en tu panel antes de contárselo a alguien. La IA te ayuda a pensar y a escribir; la subida y la publicación las hacés vos.

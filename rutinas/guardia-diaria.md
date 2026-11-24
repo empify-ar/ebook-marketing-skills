@@ -14,9 +14,9 @@ Una vez por día, a primera hora (por ejemplo, 8:07). Una tienda caída no vende
 
 | Producto | Funciona | Qué pide |
 |---|---|---|
-| Claude (web, escritorio, Cowork): tareas programadas | Según la documentación de Claude: cadencia diaria; corre aunque tu compu esté apagada, salvo que elijas una carpeta | Plan pago de Claude y Empify conectado como conector |
-| Claude Code en la nube | Según la documentación de Claude | Plan pago de Claude; Empify agregado como conector en tu cuenta de claude.ai |
-| Claude Code en el escritorio (local) | Según la documentación de Claude: solo con la app abierta y la compu despierta | Plan pago de Claude |
+| Claude (web, escritorio, Cowork): tareas programadas | Sí, según la documentación de Claude: cadencia diaria; corre aunque tu compu esté apagada, salvo que elijas una carpeta | Plan pago de Claude y Empify conectado como conector |
+| Claude Code en la nube | Sí, según la documentación de Claude | Plan pago de Claude; Empify agregado como conector en tu cuenta de claude.ai |
+| Claude Code en el escritorio (local) | Sí, según la documentación de Claude: solo con la app abierta y la compu despierta | Plan pago de Claude |
 
 Plan de Empify: sirve cualquiera, incluido Borrador.
 
