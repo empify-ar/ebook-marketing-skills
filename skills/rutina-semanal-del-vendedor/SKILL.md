@@ -1,6 +1,7 @@
 ---
 name: rutina-semanal-del-vendedor
 description: "Repaso de 10 minutos de la cuenta de Empify: plan y cupos, ebooks, ventas y visitas, y qué decidir. Usala cuando la persona pida un resumen semanal o no sepa por dónde empezar."
+license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
 ---
 
 # Rutina semanal del vendedor (10 minutos)

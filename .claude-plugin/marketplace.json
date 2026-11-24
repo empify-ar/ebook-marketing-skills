@@ -10,7 +10,7 @@
       "name": "empify",
       "source": "./",
       "description": "Conexión a tu cuenta de Empify y siete habilidades para vender mejor tus ebooks.",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "author": { "name": "Empify" },
       "homepage": "https://empify.com.ar/conectar-ia",
       "license": "SEE LICENSE IN LICENSE"

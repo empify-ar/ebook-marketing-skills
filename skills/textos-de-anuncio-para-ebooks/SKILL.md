@@ -1,6 +1,7 @@
 ---
 name: textos-de-anuncio-para-ebooks
 description: "Escribe y edita textos de anuncio para un ebook de Empify con textos_de_anuncio, sin promesas ni cifras inventadas. Usala para anuncios en Meta, Instagram o TikTok de un ebook."
+license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
 ---
 
 # Textos de anuncio para ebooks

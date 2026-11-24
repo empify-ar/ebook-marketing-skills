@@ -1,6 +1,7 @@
 ---
 name: empify-base
 description: "Contexto de Empify y de sus 7 herramientas conectadas: cuál usar, permisos, cupos y seguridad. Usala siempre que la persona hable de su cuenta, sus ebooks, ventas o tienda de Empify."
+license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
 ---
 
 # Empify: contexto y reglas de uso

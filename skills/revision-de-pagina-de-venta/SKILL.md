@@ -1,6 +1,7 @@
 ---
 name: revision-de-pagina-de-venta
 description: "Revisa la página de venta de un ebook de Empify como lo haría un comprador y devuelve textos listos para pegar en el panel. Usala cuando la tienda recibe visitas pero casi no vende."
+license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
 ---
 
 # Revisión de la página de venta de un ebook

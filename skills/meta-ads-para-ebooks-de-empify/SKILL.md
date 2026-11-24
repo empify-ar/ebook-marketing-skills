@@ -1,7 +1,7 @@
 ---
 name: meta-ads-para-ebooks-de-empify
 description: "Solo con Empify: método para pautar en Meta un ebook o tienda de tu cuenta de Empify (campaña simple, piezas, diagnóstico). Usala cuando quieras anunciar o mejorar la pauta de un ebook de Empify."
-license: "Licencia propia de Empify, uso solo con Empify. Ver LICENCIA.md"
+license: "Proprietary. Uso solo con una cuenta de Empify. Ver LICENSE."
 ---
 
 # Meta Ads para ebooks de Empify

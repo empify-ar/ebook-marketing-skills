@@ -53,7 +53,10 @@ PY
 empaquetar() {  # empaquetar <zip> <carpeta-de-habilidad>...
   local zipf="$1"; shift
   local etapa; etapa="$(mktemp -d "$TMP/e.XXXX")"
-  for c in "$@"; do cp -R "$c" "$etapa/"; done
+  for c in "$@"; do
+    cp -R "$c" "$etapa/"
+    cp "$RAIZ/LICENSE" "$etapa/$(basename "$c")/LICENSE"   # la licencia viaja dentro de cada habilidad
+  done
   find "$etapa" -exec touch -t "$FECHA_FIJA" {} +
   ( cd "$etapa" && find . -type f ! -name .DS_Store | LC_ALL=C sort | sed 's#^\./##' | zip -X -D -q "$zipf" -@ )
 }
