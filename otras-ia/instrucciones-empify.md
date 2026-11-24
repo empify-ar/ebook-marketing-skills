@@ -6,7 +6,7 @@ Este archivo es para quien usa una IA que no instala las habilidades de este rep
 
 En el campo de instrucciones o de "contexto personalizado" de tu IA, o al principio de una conversación.
 
-Antes hay que conectar Empify a tu IA: los pasos están en el [README](../README.md#conectar-tu-cuenta) y en https://empify.com.ar/conectar-ia.
+Antes hay que conectar Empify a tu IA: los pasos están en [docs/conectar-tu-cuenta.md](../docs/conectar-tu-cuenta.md) y en https://empify.com.ar/conectar-ia.
 
 ## El bloque para pegar
 
@@ -27,4 +27,4 @@ Respondé en español rioplatense, sin emojis, con cada cifra con su unidad y pe
 
 ## Aviso
 
-Este bloque resume lo esencial. Las habilidades completas están en la carpeta `skills/` y se pueden pegar de a una en la conversación si tu IA no las instala: las doce que andan sin cuenta (idea, estructura, página de venta, precio, ofertas, imágenes, lanzamiento y más) y las que usan tu cuenta (validar ideas, textos de anuncio, ventas y visitas, revisión de página, rutina semanal).
+Este bloque resume lo esencial. Las habilidades completas están en la carpeta `skills/` y se pueden pegar de a una en la conversación si tu IA no las instala: las doce que andan sin cuenta (idea, estructura, página de venta, precio, ofertas, imágenes, lanzamiento y más) y las que usan tu cuenta (elegir una idea con el Radar, validar ideas, textos de anuncio, ventas y visitas, revisión de página, rutina semanal). La del Radar no necesita la conexión: tu IA no ve el Radar, así que le pegás lo que ves en tu cuenta.

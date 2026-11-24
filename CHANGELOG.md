@@ -2,6 +2,22 @@
 
 Formato: una versión por título, la más nueva arriba.
 
+## 2.1.0 (24 de noviembre de 2026)
+
+**Qué entra**
+
+- Una habilidad nueva en la parte 2: `elegir-idea-con-el-radar`. Lleva a la persona al Radar de ideas de su cuenta de Empify, explica qué dice y qué no dice cada nivel de competencia (Nadie lo anuncia, Poca de 1 a 3 anunciantes, Media de 4 a 9, Mucha de 10 o más, Sin medir) y compara las ideas que la persona pega con lo que ella sabe y a quién llega. Trae una planilla para comparar. La IA no ve el Radar: trabaja con lo que le pegan. El Radar mide anuncios, no ventas. Se cuenta entre las habilidades que usan la cuenta, porque el Radar solo se ve dentro de una cuenta de Empify (aunque no usa la conexión): el título sigue diciendo 12 y la parte 2 pasa a tener ocho habilidades.
+- La carpeta `ejemplos/`: un caso inventado (un recetario de huerta en balcón) que recorre seis habilidades sin cuenta: idea, índice, precio y oferta, página de venta, anuncios por fecha y plan de 14 días. Cada archivo está rotulado "EJEMPLO CON DATOS INVENTADOS" y no muestra ventas.
+- La carpeta `docs/`, con lo que salió del README: instalación en detalle, cómo conectar la cuenta (y qué puede y qué no puede hacer la IA), límites por plan, privacidad y seguridad, preguntas frecuentes y contenido del repositorio.
+
+**Qué cambia**
+
+- El README se acorta: queda la primera impresión (instalación, comandos, ejemplo, las dos partes) y lo demás se enlaza a `docs/`, `RECOMENDADOS.md` y `rutinas/LEEME.md`, sin perder contenido. Suma un lugar para la imagen de portada (`assets/portada.png`), una tabla "Plantillas" que enlaza a las que ya están dentro de las habilidades y el enlace a `ejemplos/`. `README.en.md` recibe el mismo tratamiento.
+- `RECOMENDADOS.md` incorpora la tabla de los cuatro complementos de otros autores que estaba en el README.
+- `rutinas/LEEME.md` incorpora el nombre de cada rutina y por qué la tanda corre cada 28 días y no una vez por mes.
+- `empify-base` aclara que el Radar no es una herramienta de la conexión; `idea-de-ebook` menciona el Radar en su sección "Con Empify". `otras-ia/` suma la habilidad nueva y enlaza a los pasos de conexión en `docs/`.
+- Los dos manifiestos pasan a la versión 2.1.0 y el catálogo cuenta ocho habilidades con cuenta. Los `.zip` de `descargas/` se regeneran, con `elegir-idea-con-el-radar.zip` incluido.
+
 ## 2.0.1 (24 de noviembre de 2026)
 
 **Qué cambia**

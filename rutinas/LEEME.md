@@ -2,12 +2,14 @@
 
 Una rutina es un pedido que tu IA hace sola, en un día y una hora que elegís, y cuyo resultado queda guardado para que lo leas cuando quieras. Acá hay cuatro, con el texto exacto para pegar:
 
-| Rutina | Qué hace | Cada cuánto | Plan de Empify |
-|---|---|---|---|
-| [`informe-semanal.md`](informe-semanal.md) | El informe de la semana con UNA decisión | Una vez por semana | Cualquiera |
-| [`guardia-diaria.md`](guardia-diaria.md) | Mira si hay tienda caída, Mercado Pago sin conectar o cupo bajo | Una vez por día | Cualquiera |
-| [`tanda-de-anuncios.md`](tanda-de-anuncios.md) | Un borrador de textos de anuncio para tus ebooks | Cada 28 días | Emprendedor o superior |
-| [`mantener-la-conexion.md`](mantener-la-conexion.md) | Una lectura mínima para que la conexión no se corte | Una vez por semana | Cualquiera |
+| Rutina | Nombre | Qué hace | Cada cuánto | Plan de Empify |
+|---|---|---|---|---|
+| [`informe-semanal.md`](informe-semanal.md) | La Decisión del Lunes | El informe de la semana con UNA decisión (es `/empify:semana`, pero sola) | Una vez por semana | Cualquiera |
+| [`guardia-diaria.md`](guardia-diaria.md) | El Sereno | Mira si hay tienda pausada o con falla, Mercado Pago sin conectar o cupo bajo (es `/empify:guardia`, pero sola) | Una vez por día | Cualquiera |
+| [`tanda-de-anuncios.md`](tanda-de-anuncios.md) | La Tanda | Un borrador de textos de anuncio para hasta tres ebooks (es `/empify:anuncios`, pero sola) | Cada 28 días | Emprendedor o superior |
+| [`mantener-la-conexion.md`](mantener-la-conexion.md) | (sin nombre propio) | Una lectura mínima para que la conexión no se corte | Una vez por semana | Cualquiera |
+
+"El Sereno" es el vigilador nocturno de las cuadras argentinas.
 
 ## Qué es y qué no es esto
 
@@ -84,7 +86,7 @@ En la misma página "Scheduled" podés pausar la tarea, retomarla, editar el tex
 
 - Si el resultado dice "no pude leer": corré el comando `/empify:doctor`. Lo más común es que la conexión se haya cortado y haya que volver a entrar a tu cuenta de Empify.
 - Si el resultado no aparece o la tarea terminó sin datos: mirá el paso 4 (herramientas en "permitir") y el paso 3.
-- La conexión se corta si pasan 30 días sin usarla. Por eso ninguna rutina de acá va a más de 28 días de intervalo.
+- La conexión se corta si pasan 30 días sin usarla. Por eso ninguna rutina de acá va a más de 28 días de intervalo, y la tanda corre cada 28 días y no una vez por mes: un mes puede durar 31.
 
 ## Los resguardos que tienen todas
 

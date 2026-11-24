@@ -1,8 +1,8 @@
 {
   "name": "empify",
   "displayName": "Empify",
-  "version": "2.0.1",
-  "description": "Doce habilidades abiertas para vender un ebook (andan sin cuenta) y, con tu cuenta de Empify, lectura de ventas y visitas, comandos y rutinas semanales. En español.",
+  "version": "2.1.0",
+  "description": "Doce habilidades abiertas para vender un ebook (andan sin cuenta) y, con tu cuenta de Empify, ayuda para leer el Radar de ideas, lectura de ventas y visitas, comandos y rutinas semanales. En español.",
   "author": {
     "name": "Empify",
     "url": "https://empify.com.ar"

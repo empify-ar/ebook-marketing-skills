@@ -85,4 +85,6 @@ Si la persona conectó su cuenta de Empify, además podés usar estas herramient
 - `validar_idea` (permiso crear; descuenta una validación del mes en el plan Borrador y tiene un tope de 10 por hora): una segunda mirada con un panel de compradores simulados, objeciones y un rango de precio estimado. Es una simulación: no son personas consultadas ni mide ventas, y no reemplaza las cinco conversaciones. Avisá el gasto y esperá un sí antes de llamarla.
 - `listar_ebooks` (leer): para ver si ya tiene un ebook parecido.
 
+Si todavía no tiene ninguna idea, el Radar de ideas de su cuenta muestra temas que se anuncian en otros países y cuántos anunciantes hay en el suyo. La conexión no lo lee: la habilidad `elegir-idea-con-el-radar` explica cómo leer lo que la persona copia de ahí.
+
 Lo que suma: un contraste rápido con la idea ya afinada. La guía completa para leer ese resultado está en la habilidad `validar-idea-de-ebook`.

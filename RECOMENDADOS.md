@@ -1,10 +1,27 @@
-# Recomendados que no entran al catálogo
+# Recomendados de otros autores
 
-El catálogo de este repositorio (`.claude-plugin/marketplace.json`) solo lista complementos de Claude Code que cumplen cuatro condiciones, al 24 de noviembre de 2026: el repositorio existe, trae un archivo de licencia, tiene su propio manifiesto de complemento y se puede fijar a una versión exacta. Los cuatro que las cumplen (`marketing-skills`, `claude-seo`, `claude-ads` y `resend`) están en el [README](README.md#recomendados-de-otros-autores).
+El catálogo de este repositorio (`.claude-plugin/marketplace.json`) solo lista complementos de Claude Code que cumplen cuatro condiciones, al 24 de noviembre de 2026: el repositorio existe, trae un archivo de licencia, tiene su propio manifiesto de complemento y se puede fijar a una versión exacta. Los cuatro que las cumplen (`marketing-skills`, `claude-seo`, `claude-ads` y `resend`) están en la tabla de abajo.
+
+## Los cuatro complementos de otros autores
+
+**No son de Empify ni los respalda su autor.** No hay nada copiado acá: cada uno se baja del repositorio de su autor, en una versión exacta que revisamos (fijada con un código de versión), y se rige por la licencia de su autor. Antes de instalar uno, leelo: pueden traer comandos y scripts. Revisamos manifiesto, licencia y ganchos declarados; no leímos todo su código.
+
+Primero agregá el catálogo (una sola vez): `/plugin marketplace add empify-ar/ebook-marketing-skills`.
+
+| Complemento | Autor | Licencia | Para qué le sirve a quien vende un ebook | Instalar | Cuidado |
+|---|---|---|---|---|---|
+| `marketing-skills` | [coreyhaines31](https://github.com/coreyhaines31/marketingskills) | MIT | Textos de venta, optimización de una página que no convierte, secuencias de mails, lanzamientos | `/plugin install marketing-skills@empify` | En inglés y escrito para SaaS; trae habilidades que no aplican a un ebook |
+| `claude-seo` | [AgriciDaniel](https://github.com/AgriciDaniel/claude-seo) | MIT | Revisar una página para buscadores y para que las IA puedan citarla | `/plugin install claude-seo@empify` | Trae scripts y un gancho que corre código en tu computadora; sirve si el ebook se vende en un dominio propio |
+| `claude-ads` | [AgriciDaniel](https://github.com/AgriciDaniel/claude-ads) | MIT | Auditar tus anuncios, hacer cuentas de punto de equilibrio y diseñar pruebas | `/plugin install claude-ads@empify` | Puede proponer cambios en tu cuenta de anuncios: dejalo en solo lectura; en inglés |
+| `resend` | [resend](https://github.com/resend/resend-skills) | MIT | Redactar y enviar mails con Resend | `/plugin install resend@empify` | Pide cuenta de Resend, dominio e inicio de sesión; Empify no te da la lista de compradores |
+
+Otras dos clases de recomendación no pueden ir en el catálogo: un servidor de Google Analytics, que no es un complemento, y las conexiones oficiales de servicios como Canva, Meta, Buffer o Gmail, que no tienen un repositorio que se pueda fijar. Siguen abajo.
+
+## Lo que no pudo entrar al catálogo
 
 Esto es lo que se recomienda pero no pudo entrar, con el motivo. Ninguno es de Empify ni lo respalda su autor, y ninguno se probó desde acá.
 
-## Servidor de Google Analytics
+### Servidor de Google Analytics
 
 - **Autor y repositorio:** Google, [googleanalytics/google-analytics-mcp](https://github.com/googleanalytics/google-analytics-mcp).
 - **Licencia:** Apache-2.0 (archivo `LICENSE` en la raíz, al 24-nov-2026).
@@ -23,7 +40,7 @@ claude mcp add analytics-mcp \
 
 - **Cuidado:** `pipx run` baja la versión que esté publicada en ese momento, no una fijada. Leé el README de su autor antes de dar acceso a tus datos.
 
-## Conexiones oficiales de otros servicios
+### Conexiones oficiales de otros servicios
 
 Son servicios alojados por sus empresas: no tienen un repositorio que fijar ni una licencia de código, y se rigen por los términos de cada empresa. Se agregan como conector, igual que Empify (en Claude, **Personalización** y **Conectores**). Las direcciones responden pidiendo iniciar sesión (al 24-nov-2026); lo demás, incluidos los planes que lo permiten, se leyó en sus páginas oficiales y puede haber cambiado.
 
@@ -46,7 +63,7 @@ Regla común: pedí cada receta en una conversación, con vos mirando, y pedí d
 2. **Rendimiento de Meta cruzado con tus ventas de Empify.** Con el conector de anuncios de Meta en solo lectura, más `visitas_tienda` y `ventas`, tu IA arma una tabla por campaña con gasto, clics, visitantes y ventas cobradas, y el costo por venta real. Límite: el cruce solo funciona si el nombre de campaña del link coincide en los dos lados; las ventas sin origen quedan aparte. Ese conector también puede crear y editar anuncios: dejá esas acciones en "preguntar siempre" o bloqueadas. El origen de visitas y la versión completa de `visitas_tienda` son del plan Emprendedor en adelante.
 3. **El informe semanal como borrador de mail.** Pedile `/empify:semana` y que deje el resultado como borrador en Gmail, sin enviarlo.
 4. **Historial semanal en una planilla de Google Drive.** Pedile el informe y que agregue la fila de la semana a tu hoja de cálculo, con un comentario de qué cambió. Resuelve que la conexión de Empify no guarda historial.
-5. **Revisión de tu página de venta con una guía de copy ajena.** Con `ver_ebook` (el texto de la página) y `visitas_tienda` (la conversión), más una guía como [`marketing-skills`](README.md#recomendados-de-otros-autores), tu IA propone tres cambios en el titular, la garantía o los beneficios, con tu conversión actual como línea de base. Límite: esa guía es genérica y está en inglés; quitá todo lo que sea urgencia que no existe.
+5. **Revisión de tu página de venta con una guía de copy ajena.** Con `ver_ebook` (el texto de la página) y `visitas_tienda` (la conversión), más una guía como [`marketing-skills`](#los-cuatro-complementos-de-otros-autores), tu IA propone tres cambios en el titular, la garantía o los beneficios, con tu conversión actual como línea de base. Límite: esa guía es genérica y está en inglés; quitá todo lo que sea urgencia que no existe.
 
 ## Qué no se recomienda
 

@@ -1,5 +1,7 @@
 # 12 habilidades de Claude para vender tu ebook. Andan sin cuenta.
 
+![12 habilidades de Claude para vender tu ebook](assets/portada.png)
+
 De la idea al lanzamiento: elegir la idea, armar el índice, escribir la página de venta, poner precio, pensar los anuncios y planear los 14 días de salida. Si además conectás tu cuenta de [Empify](https://empify.com.ar), una plataforma argentina para crear ebooks y venderlos, tu IA lee tus ventas y tus visitas y te escribe la decisión de la semana. Los cambios los hacés vos.
 
 Abierto (licencia MIT) · en español · sin cuenta para empezar · probado con Claude · [English](README.en.md)
@@ -21,7 +23,7 @@ Después, dentro de Claude Code, escribí `/empify:empezar` (o `/empify:empezar 
 3. En **Personalización** (**Customize**) abrí **Skills**, tocá **+**, **+ Create skill** y **Upload a skill**.
 4. Subí un `.zip` por vez.
 
-Más detalle en [Instalación en detalle](#instalación-en-detalle).
+Más detalle en [docs/instalacion.md](docs/instalacion.md).
 
 ## Qué querés, qué escribís, qué recibís
 
@@ -71,11 +73,7 @@ Qué no pude saber: cuánto gastaste ni qué resultados tuvieron tus anuncios en
 conexión no los ve.
 ```
 
-## Instalación en detalle
-
-**Claude Code.** El comando de arriba instala las habilidades, los siete comandos y la conexión declarada. Dentro de Claude Code, los mismos dos pasos son `/plugin marketplace add empify-ar/ebook-marketing-skills` y `/plugin install empify@empify`.
-
-**claude.ai.** En [`descargas/`](descargas/) hay un `.zip` por habilidad y `empify-habilidades-todas.zip`, que junta todas y sirve para descomprimir en una carpeta, no para subir de una vez. Si tu Claude está en español, el menú se llama **Personalización**; en inglés, **Customize**. En Team y Enterprise, quien administra puede haber desactivado las habilidades propias.
+Más ejemplos, con un caso inventado de punta a punta (idea, índice, precio, página de venta, anuncios y plan de 14 días): [`ejemplos/`](ejemplos/).
 
 ## Las dos partes
 
@@ -104,189 +102,70 @@ Ninguna promete ventas, alcance ni resultados: ordenan el trabajo y bajan la inc
 
 ### Parte 2: lo que suma tu cuenta de Empify
 
-[Empify](https://empify.com.ar) es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. La cuenta gratis alcanza para empezar. Al conectarla, tu IA puede leer tus ebooks, tus ventas y tus visitas, y las habilidades de esta parte trabajan con tus datos reales. La conexión es una dirección web, `https://empify.com.ar/api/mcp`, no un programa para instalar.
+[Empify](https://empify.com.ar) es una plataforma argentina para crear ebooks con IA y venderlos con tienda propia. La cuenta gratis alcanza para empezar. Al conectarla, tu IA puede leer tus ebooks, tus ventas y tus visitas, y las habilidades de esta parte trabajan con tus datos reales. La conexión es una dirección web, `https://empify.com.ar/api/mcp`, no un programa para instalar: los pasos están en [docs/conectar-tu-cuenta.md](docs/conectar-tu-cuenta.md).
 
 | Habilidad | Para qué sirve | Plan de Empify |
 |---|---|---|
 | [`empify-base`](skills/empify-base/SKILL.md) | Contexto: las 7 herramientas y cuándo usar cada una, permisos, cupos y reglas de seguridad. | Cualquiera |
-| [`validar-idea-de-ebook`](skills/validar-idea-de-ebook/SKILL.md) | Afina la idea con 3 o 4 preguntas, la valida con un panel de compradores simulados y cierra con avanzar, ajustar o descartar. Es una simulación: no mide ventas. | Cualquiera; con Borrador, 1 validación por mes. Pide el permiso "crear" |
+| [`elegir-idea-con-el-radar`](skills/elegir-idea-con-el-radar/SKILL.md) | Te lleva al Radar de ideas de tu cuenta, explica qué dice y qué no dice cada nivel de competencia y compara las ideas que le pegás. La IA no ve el Radar: trabaja con lo que copiás. Mide anuncios, no ventas. | Cualquiera; con Borrador, las 3 primeras ideas de cada país. No usa la conexión |
+| [`validar-idea-de-ebook`](skills/validar-idea-de-ebook/SKILL.md) | Afina la idea con 3 o 4 preguntas, la pone frente a un panel de compradores simulados y cierra con avanzar, ajustar o descartar. Es una simulación: no mide ventas. | Cualquiera; con Borrador, 1 validación por mes. Pide el permiso "crear" |
 | [`textos-de-anuncio-para-ebooks`](skills/textos-de-anuncio-para-ebooks/SKILL.md) | Elige ángulo, pide los textos a Empify y los edita, sin promesas ni cifras inventadas. | Emprendedor o superior. Pide el permiso "crear" |
 | [`lectura-de-ventas-y-visitas`](skills/lectura-de-ventas-y-visitas/SKILL.md) | Diagnostica si el problema es tráfico o conversión, qué canal rinde y qué hacer esta semana. | Cualquiera; montos, detalle por ebook, origen de visitas y conversión desde Emprendedor |
 | [`revision-de-pagina-de-venta`](skills/revision-de-pagina-de-venta/SKILL.md) | Lee tu página de venta como un comprador y devuelve textos para pegar en tu panel. | Cualquiera |
 | [`rutina-semanal-del-vendedor`](skills/rutina-semanal-del-vendedor/SKILL.md) | Un repaso de 10 minutos: cuenta, ebooks, ventas, visitas y una decisión. | Cualquiera |
 | [`doctor-de-conexion`](skills/doctor-de-conexion/SKILL.md) | Diagnostica por qué no anda la conexión: no agregada, sesión vencida, 30 días sin uso, plan o cupo. | Cualquiera |
 
-Además: los siete comandos de arriba y cuatro rutinas ([más abajo](#rutinas)).
+Tu IA puede leer tus ebooks, tus ventas, tus visitas y tus cupos, y escribir texto. No puede publicar ni cambiar tu tienda, tocar precios ni cobros, borrar, subir anuncios ni ver datos de tus compradores. El detalle está en [docs/conectar-tu-cuenta.md](docs/conectar-tu-cuenta.md#qué-puede-hacer-tu-ia-con-tu-cuenta); los topes de cada plan, en [docs/limites-por-plan.md](docs/limites-por-plan.md).
 
-**Qué puede hacer tu IA con tu cuenta**
+Además: los siete comandos de arriba y cuatro [rutinas](#rutinas).
 
-- Mostrar tu plan, cuánto usaste de tus cupos del mes y si tenés Mercado Pago conectado.
-- Listar tus ebooks y leer uno: el índice, el texto de un capítulo que le pidas, la portada y los textos de la página de venta.
-- Contarte tus ventas (pesos y dólares por separado) y tus visitas, por período y por ebook.
-- Validar una idea de ebook y escribir textos de anuncio para uno de tus ebooks (si tildás el permiso de "crear" al conectar).
+## Plantillas
 
-**Qué no puede hacer**
+Están dentro de cada habilidad y se usan desde ahí. Para copiar una, abrila y copiá el texto.
 
-- Publicar ni cambiar tu tienda ni tus ebooks.
-- Tocar precios, cobros ni reembolsos.
-- Borrar nada.
-- Publicar anuncios en Meta ni en ningún otro lado: solo escribe el texto.
-- Ver datos de tus compradores: nombres, mails ni nada de ellos.
+| Plantilla | Para qué | Habilidad |
+|---|---|---|
+| [Cinco conversaciones](skills/idea-de-ebook/cinco-conversaciones.md) | Mensaje de invitación, preguntas y planilla para probar una idea con cinco personas | `idea-de-ebook` |
+| [Control del índice](skills/estructura-de-ebook/control-del-indice.md) | Revisar el índice punto por punto antes de escribir | `estructura-de-ebook` |
+| [Ficha de plantilla y derechos](skills/ebook-visual/plantilla-de-pagina.md) | Ficha de la plantilla, prueba de impresión y planilla de derechos de un libro visual | `ebook-visual` |
+| [Lista de control de la página](skills/pagina-de-venta/lista-de-control.md) | Revisar una página de venta bloque por bloque | `pagina-de-venta` |
+| [Cuenta por venta](skills/precio-y-oferta/cuenta-por-venta.md) | Lo que queda por venta, ventas necesarias y máximo a pagar por venta | `precio-y-oferta` |
+| [Textos modelo de ofertas](skills/escalera-de-ofertas/textos-modelo.md) | Textos para la oferta al pagar, después de comprar y la segunda oportunidad | `escalera-de-ofertas` |
+| [Pedidos de imágenes](skills/imagenes-de-venta/prompts-por-imagen.md) | Pedidos modelo para un generador de imágenes | `imagenes-de-venta` |
+| [Calendario de fechas](skills/angulos-de-anuncio-por-fecha/calendario-de-fechas.md) | Fechas de Argentina y Latinoamérica con su estado y ángulos por fecha | `angulos-de-anuncio-por-fecha` |
+| [Planilla de 14 días](skills/lanzamiento-en-14-dias/planilla-de-14-dias.md) | Una fila por día del lanzamiento, con las mismas cinco cifras | `lanzamiento-en-14-dias` |
+| [Plantillas para redes](skills/piezas-para-redes/plantillas.md) | Publicaciones sacadas del propio libro | `piezas-para-redes` |
+| [Perfil del vendedor](skills/perfil-del-vendedor/plantilla-del-perfil.md) | El archivo que leen las demás habilidades | `perfil-del-vendedor` |
+| [Planilla del Radar](skills/elegir-idea-con-el-radar/planilla-del-radar.md) | Comparar ideas copiadas del Radar con lo que sabés y a quién llegás | `elegir-idea-con-el-radar` |
+| [Planilla semanal](skills/rutina-semanal-del-vendedor/planilla-semanal.md) | Las cifras de cada semana, siempre con el mismo período | `rutina-semanal-del-vendedor` |
+| [Diagnóstico de ventas y visitas](skills/lectura-de-ventas-y-visitas/diagnostico.md) | Resumen de una pantalla y diagnóstico | `lectura-de-ventas-y-visitas` |
+| [Lista de chequeo de la página](skills/revision-de-pagina-de-venta/lista-de-chequeo.md) | Revisar la página real de tu tienda | `revision-de-pagina-de-venta` |
 
-#### Conectar tu cuenta
-
-Detalle y ayuda oficial al día: https://empify.com.ar/conectar-ia
-
-**Claude en 5 pasos.** Funciona en claude.ai y en la aplicación de escritorio. Los planes gratis permiten una conexión propia; Pro y superiores permiten varias.
-
-1. Entrá a **Personalización** y abrí **Conectores**.
-2. Tocá **Añadir** y elegí **Añadir conector personalizado**.
-3. Escribí el nombre `Empify`, pegá la dirección `https://empify.com.ar/api/mcp` y tocá **Continuar**. Dejá la autenticación como viene (las opciones marcadas **Detectado**) y tocá **Añadir**.
-4. Tocá **Conectar**. Se abre Empify: entrá con tu cuenta, mirá los permisos (por defecto, solo ver) y tocá **Aceptar y volver**. Si querés que además valide ideas y escriba textos de anuncio, tildá esa casilla antes.
-5. Abrí una conversación nueva y probá con un pedido de los de abajo. La primera vez Claude puede pedirte permiso para usar cada herramienta: podés permitirla una vez o siempre.
-
-Probado con Claude en español. Si tu Claude está en inglés, los menús son **Customize**, **Connectors**, **Add custom connector**, **Continue**, **Add** y **Connect**. En Team y Enterprise, la primera vez la agrega quien administra la cuenta. Agregarla desde el celular no está confirmado por Claude: hacelo desde la web o el escritorio, y después la usás también en la app.
-
-**Claude Code.** Si instalaste el complemento, la conexión ya viene declarada: dentro de Claude Code escribí `/mcp`, elegí `empify` y seguí el navegador para entrar a tu cuenta. Sin el complemento:
-
-```bash
-claude mcp add --transport http empify https://empify.com.ar/api/mcp
-```
-
-**Ocho pedidos para probar la conexión**
-
-1. "¿Cuál de mis ebooks vendió más este mes?"
-2. "¿De dónde vienen las visitas de mi tienda y cuántas terminan en compra?"
-3. "Armame tres textos de anuncio para mi ebook de repostería."
-4. "Validá esta idea: guía de huerta en balcón."
-5. "¿Cuánto me queda de cupo este mes en mi plan?"
-6. "Leé la página de venta de mi último ebook y decime qué mejorarías."
-7. "Hacé el repaso semanal de mi cuenta."
-8. "¿Qué ebooks míos todavía no tienen la tienda publicada?"
-
-Otras IA: solo lo probamos con Claude. Los pasos que da cada fabricante están en https://empify.com.ar/conectar-ia, y hay un bloque de instrucciones para pegar en [`otras-ia/`](otras-ia/instrucciones-empify.md).
+Las últimas cuatro son de habilidades de la parte 2. La del Radar necesita tu cuenta para ver las ideas, pero no la conexión; las otras tres rinden más con la cuenta conectada.
 
 ## Rutinas
 
-Una rutina es un pedido que tu IA hace sola, en el día y la hora que elegís, y cuyo resultado queda guardado para que lo leas cuando quieras. Son cuatro textos para pegar, con una guía paso a paso en [`rutinas/LEEME.md`](rutinas/LEEME.md). Corren como tareas programadas de Claude, que piden un plan pago de Claude (Pro, Max, Ultra, Team o Enterprise).
-
-| Archivo | Nombre | Qué hace | Cada cuánto | Plan de Empify |
-|---|---|---|---|---|
-| [`informe-semanal.md`](rutinas/informe-semanal.md) | La Decisión del Lunes | El informe de la semana con una decisión (es `/empify:semana`, pero sola) | Una vez por semana | Cualquiera |
-| [`guardia-diaria.md`](rutinas/guardia-diaria.md) | El Sereno | Mira si hay tienda pausada o con falla, Mercado Pago sin conectar o cupo bajo (es `/empify:guardia`, pero sola) | Una vez por día | Cualquiera |
-| [`tanda-de-anuncios.md`](rutinas/tanda-de-anuncios.md) | La Tanda | Un borrador de textos de anuncio para hasta tres ebooks (es `/empify:anuncios`, pero sola) | Cada 28 días | Emprendedor o superior |
-| [`mantener-la-conexion.md`](rutinas/mantener-la-conexion.md) | (sin nombre propio) | Una lectura mínima para que la conexión no se corte | Una vez por semana | Cualquiera |
-
-"El Sereno" es el vigilador nocturno de las cuadras argentinas.
-
-- **Qué es:** una IA que lee tu cuenta y escribe texto. Ninguna rutina publica, cambia precios, crea ebooks, sube anuncios ni paga nada: los cambios los hacés vos en tu panel.
-- **Dónde queda el resultado:** en la lista de tareas de tu IA. No te llega al celular ni al mail: tenés que entrar a mirarlo.
-- **Por qué 28 días y no un mes:** Empify corta la conexión cuando pasan 30 días sin usarla, y un mes puede durar 31.
-- **Un resguardo:** dejá prendida solo la conexión de Empify en la tarea. Lo explica `rutinas/LEEME.md`.
-
-## Con las herramientas que ya usás
-
-Hay cinco recetas para combinar tu cuenta de Empify con Canva, Gmail, Google Drive y el conector de anuncios de Meta.
-
-Las recetas están en [`RECOMENDADOS.md`](RECOMENDADOS.md#recetas-para-combinar).
+Una rutina es un pedido que tu IA hace sola, en el día y la hora que elegís, y cuyo resultado queda guardado para que lo leas cuando quieras. Hay cuatro (el informe semanal, una guardia diaria, una tanda de anuncios cada 28 días y una para que la conexión no se corte), con el texto para pegar y una guía paso a paso en [`rutinas/LEEME.md`](rutinas/LEEME.md). Corren como tareas programadas de Claude, que piden un plan pago de Claude (Pro, Max, Ultra, Team o Enterprise). Ninguna publica, cambia precios, crea ebooks, sube anuncios ni paga nada.
 
 ## Recomendados de otros autores
 
-El catálogo de este repositorio, además de `empify`, lista complementos de otros autores. **No son de Empify ni los respalda su autor.** No hay nada copiado acá: cada uno se baja del repositorio de su autor, en una versión exacta que revisamos (fijada con un código de versión), y se rige por la licencia de su autor. Antes de instalar uno, leelo: pueden traer comandos y scripts. Revisamos manifiesto, licencia y ganchos declarados; no leímos todo su código.
-
-Primero agregá el catálogo (una sola vez): `/plugin marketplace add empify-ar/ebook-marketing-skills`.
-
-| Complemento | Autor | Licencia | Para qué le sirve a quien vende un ebook | Instalar | Cuidado |
-|---|---|---|---|---|---|
-| `marketing-skills` | [coreyhaines31](https://github.com/coreyhaines31/marketingskills) | MIT | Textos de venta, optimización de una página que no convierte, secuencias de mails, lanzamientos | `/plugin install marketing-skills@empify` | En inglés y escrito para SaaS; trae habilidades que no aplican a un ebook |
-| `claude-seo` | [AgriciDaniel](https://github.com/AgriciDaniel/claude-seo) | MIT | Revisar una página para buscadores y para que las IA puedan citarla | `/plugin install claude-seo@empify` | Trae scripts y un gancho que corre código en tu computadora; sirve si el ebook se vende en un dominio propio |
-| `claude-ads` | [AgriciDaniel](https://github.com/AgriciDaniel/claude-ads) | MIT | Auditar tus anuncios, hacer cuentas de punto de equilibrio y diseñar pruebas | `/plugin install claude-ads@empify` | Puede proponer cambios en tu cuenta de anuncios: dejalo en solo lectura; en inglés |
-| `resend` | [resend](https://github.com/resend/resend-skills) | MIT | Redactar y enviar mails con Resend | `/plugin install resend@empify` | Pide cuenta de Resend, dominio e inicio de sesión; Empify no te da la lista de compradores |
-
-Otras dos clases de recomendación no pueden ir en el catálogo: un servidor de Google Analytics, que no es un complemento, y las conexiones oficiales de servicios como Canva, Meta, Buffer o Gmail, que no tienen un repositorio que se pueda fijar. Están en [`RECOMENDADOS.md`](RECOMENDADOS.md), con el motivo y cómo instalarlas.
-
-## Límites por plan
-
-| Plan | Llamadas por día |
-|---|---|
-| Borrador | 30 |
-| Editor | 150 |
-| Emprendedor | 500 |
-| Imperio | 1.500 |
-
-- Hasta 30 llamadas por minuto y hasta 5 conexiones activas por cuenta.
-- Validar ideas: hasta 10 por hora. Si tu plan tiene un cupo mensual de validaciones (hoy, Borrador), cada una descuenta del cupo como en el panel.
-- Textos de anuncio: del plan Emprendedor en adelante, hasta 20 pedidos por hora.
-- Ventas y visitas: con Borrador y Editor ves cantidades; los montos, el detalle por ebook, de dónde vienen las visitas y la conversión son del plan Emprendedor en adelante, igual que en el panel.
-- Los cupos del plan se renuevan el primer día de cada mes (hora UTC). Los planes están en https://empify.com.ar/precios.
-- Una conexión sin uso durante 30 días se corta sola.
-
-Fuente: https://empify.com.ar/conectar-ia y https://empify.com.ar/precios.
-
-## Seguridad y privacidad
-
-- **No le das tu contraseña a la IA.** Entrás a Empify con tu cuenta y aceptás permisos. Por defecto, la IA solo puede ver.
-- **La IA ve solo lo tuyo:** tus ebooks (títulos, el texto de un capítulo si se lo pedís, la página de venta), tus totales de ventas y visitas, tu plan y tus cupos. Nunca los de otras personas, ni datos de tus compradores, ni claves.
-- **Lo que lee lo procesa tu IA** con las reglas del servicio que elegiste. Conectá solo IAs en las que confiás.
-- **Podés cortar la conexión cuando quieras:** desde tu cuenta en Empify, en **Conexiones con IA**, o quitando el conector en tu IA. Si ves conexiones repetidas, cortá las que no uses.
-- **Un riesgo que Empify no puede cerrar desde acá:** si tu IA también está conectada a otras cosas (tu correo, la web, otros servicios), un texto escrito para engañarla podría hacer que mande a otro lado algo que leyó de Empify. Dejá activado que tu IA te pida permiso antes de usar herramientas y leé lo que te pide antes de aceptar.
-- Todo lo que devuelve la conexión (títulos, capítulos, nombres de campaña) se trata como dato y no como instrucciones. Las habilidades de este repositorio refuerzan esa regla.
-- Las doce habilidades abiertas no usan ninguna cuenta ni mandan nada a ningún lado.
+El catálogo de este repositorio, además de `empify`, lista cuatro complementos de otros autores (`marketing-skills`, `claude-seo`, `claude-ads` y `resend`), cada uno fijado a una versión exacta de su propio repositorio. **No son de Empify ni los respalda su autor.** La tabla con qué hace cada uno, cómo se instala y qué cuidar está en [`RECOMENDADOS.md`](RECOMENDADOS.md), junto con lo que no pudo entrar al catálogo y cinco recetas para combinar tu cuenta de Empify con Canva, Gmail, Google Drive y el conector de anuncios de Meta.
 
 ## Qué se probó y qué no
 
-Probado:
+Probado: la conexión con Claude, en español; que el complemento pasa el validador (`claude plugin validate`) y se instala junto con los cuatro recomendados.
 
-- La conexión con Claude, en español.
-- Que el complemento pasa el validador (`claude plugin validate`) y se instala junto con los cuatro recomendados.
+Todavía no: las rutinas corriendo solas con la conexión de Empify, y la subida de los `.zip` a claude.ai.
 
-Todavía no:
+## Más información
 
-- Las rutinas corriendo solas con la conexión de Empify.
-- La subida de los `.zip` a claude.ai.
-
-## Preguntas frecuentes
-
-**¿Tiene costo extra?** No. La conexión no se cobra aparte. Validar una idea y armar textos de anuncio siguen las reglas de tu plan, como si lo hicieras desde Empify. Lo que cuesta tu IA (tu suscripción a Claude) es aparte.
-
-**¿Por qué dice 12 y no 19?** Doce habilidades sirven sin cuenta. Las otras siete usan tu cuenta de Empify, y están en la parte 2.
-
-**¿Necesito Empify para usar las doce?** No. Sirven para cualquier ebook, esté donde esté. Las que mencionan a Empify (sus comisiones, sus ofertas extra, su tienda) lo hacen en una sección aparte, "Con Empify", que es opcional. `perfil-del-vendedor` y `proximo-paso` nombran a Empify en sus pasos (el perfil se guarda en un archivo que se llama `perfil-empify.md`), pero las dos andan sin cuenta.
-
-**¿Funciona en el celular?** En Claude, una vez agregada la conexión desde la computadora, también la usás en la app.
-
-**¿La IA puede publicar o cambiar mi tienda?** No. Puede leer y generar texto; lo demás lo hacés vos en tu panel.
-
-**¿Qué datos de mis compradores ve?** Ninguno.
-
-**No me aparece la pantalla de permisos.** Fijate que la dirección sea exactamente `https://empify.com.ar/api/mcp` y que hayas entrado a tu cuenta de Empify en ese navegador. Si sigue sin aparecer, quitá el conector y agregalo de nuevo, o corré `/empify:doctor`.
-
-**¿Las habilidades mandan mis datos a algún lado?** No. Son archivos de texto con instrucciones; no ejecutan código ni hacen llamadas por su cuenta. Los complementos recomendados de otros autores sí pueden traer código: leé su ficha antes de instalarlos.
-
-**¿Hacen vender?** No prometen ventas ni resultados. Te ayudan a ordenar el trabajo, a escribir mejor y a leer tus números con criterio.
-
-**¿Por qué no hay código del servidor?** Porque la conexión es remota, por dirección web. No hay nada que instalar ni ejecutar en tu computadora.
-
-## Contenido del repositorio
-
-```text
-.claude-plugin/     plugin y catálogo (marketplace) para Claude Code
-.mcp.json           conexión a Empify declarada para el plugin
-.github/            plantillas para pedir una habilidad o avisar de un error
-skills/             las 19 habilidades (una carpeta cada una)
-commands/           los siete comandos
-rutinas/            los cuatro textos de rutina y su guía
-descargas/          un .zip por habilidad y uno con todas
-otras-ia/           bloque de texto con lo esencial, para pegar en tu IA
-scripts/            empaquetar.sh arma los .zip
-RECOMENDADOS.md     recomendaciones que no entran al catálogo
-CHANGELOG.md        qué cambió en cada versión
-CONTRIBUTING.md     cómo aportar
-SECURITY.md         cómo avisar de un problema de seguridad
-LICENSE             MIT
-```
-
-Para regenerar los .zip después de cambiar una habilidad: `scripts/empaquetar.sh`.
+- [Instalación en detalle](docs/instalacion.md)
+- [Conectar tu cuenta de Empify](docs/conectar-tu-cuenta.md): pasos, qué puede y qué no puede hacer tu IA, pedidos para probar
+- [Límites por plan](docs/limites-por-plan.md)
+- [Privacidad y seguridad](docs/privacidad-y-seguridad.md)
+- [Preguntas frecuentes](docs/preguntas-frecuentes.md)
+- [Contenido del repositorio](docs/contenido-del-repositorio.md)
+- [Cambios de cada versión](CHANGELOG.md)
 
 ## Cómo aportar
 

@@ -30,6 +30,7 @@ Los argumentos exactos, los valores permitidos y la forma de cada salida están 
 - Para cualquier análisis de números: primero `mi_cuenta` (el plan decide qué datos vienen), después `ventas` y `visitas_tienda` con el MISMO período.
 - Para opinar sobre el texto de un ebook o su página de venta: `ver_ebook`. Pedí un capítulo solo si hace falta, porque trae hasta 20.000 caracteres.
 - Para una idea nueva: `validar_idea`, recién después de preguntar (ver la habilidad `validar-idea-de-ebook`).
+- El Radar de ideas de la cuenta no es una herramienta de esta conexión: no lo podés leer. Si la persona quiere elegir una idea con el Radar, que te pegue lo que ve (ver la habilidad `elegir-idea-con-el-radar`).
 - Para anuncios: `ver_ebook` primero, después `textos_de_anuncio` (ver `textos-de-anuncio-para-ebooks`).
 
 ## Permisos, cupos y topes
